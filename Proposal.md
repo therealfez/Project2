@@ -23,6 +23,7 @@ Sketch:
 ![Sketch of site layout](public/images/project2sketch.jpg)
 
 Api:
-
+User login authenticator.
+Website reliability checker. 
 
 Users will be able to upload articles to the databse. Each submition will create a post that will link to a message board where users can access the article and post comments. 
