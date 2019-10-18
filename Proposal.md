@@ -24,4 +24,4 @@ User Authentication
 Sketch:
 
 
-
+Users will be able to upload articles to the databse. Each submition will create a post that will link to a message board where users can access the article and post comments. 
