@@ -1,8 +1,13 @@
 var db = require("../models");
+var sources = require("../data/sources");
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
+    // Object.keys(sources).forEach(function(key) {
+    //   var key = sources[key];
+    //   console.log(key);
+    // });
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         msg: "Welcome!",
