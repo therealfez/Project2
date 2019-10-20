@@ -1,3 +1,6 @@
+// I want to set up a feature for the website that allows users
+// to search a website by its url to check its credibility
+
 var sources = {
     "100percentfedup.com": {
         "type": "bias",
