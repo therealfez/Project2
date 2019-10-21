@@ -20,3 +20,12 @@
 
 * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../../01-Class-Content/10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
 
+
+MVP:
+1. mySQL database that serves users links to articles, and recieves user submissions and comments. 
+2. By using sequelize and handlebars, we will need to have our routes, orm, and views functioning. 
+3. A layout that clearly displays submissions and reroutes users to comment sections for each submission.
+4. User authentication working properly.
+
+
+
