@@ -1,4957 +1,4957 @@
 // I want to set up a feature for the website that allows users
 // to search a website by its url to check its credibility
 
-var sources = {
-    "100percentfedup.com": {
+var sources = [{
+    "100percentfedup.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "365usanews.com": {
+    }],
+    "365usanews.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "4threvolutionarywar.wordpress.com": {
+    }],
+    "4threvolutionarywar.wordpress.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "aheadoftheherd.com": {
+    }],
+    "aheadoftheherd.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "false quotes regarding banking, heavily promotes businesses advertising on site/ buying of precious metals"
-    },
-    "americablog.com": {
+    }],
+    "americablog.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": "domain for sale"
-    },
-    "americanlookout.com": {
+    }],
+    "americanlookout.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americanpatriotdaily.com": {
+    }],
+    "americanpatriotdaily.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "americanthinker.com": {
+    }],
+    "americanthinker.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "sites both reliable/not reliable sources, mix of opinion/'fact'"
-    },
-    "americasfreedomfighters.com": {
+    }],
+    "americasfreedomfighters.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "AmmoLand.com": {
+    }],
+    "AmmoLand.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "anotherdayintheempire.com": {
+    }],
+    "anotherdayintheempire.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "antiwar.com": {
+    }],
+    "antiwar.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "site is biased but very open about bias and source"
-    },
-    "antoniusaquinas.wp.com": {
+    }],
+    "antoniusaquinas.wp.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bignuggetnews.com": {
+    }],
+    "bignuggetnews.com": [{
         "type": "bias",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "BrotherJohnF.com": {
+    }],
+    "BrotherJohnF.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "centerforsecuritypolicy.org": {
+    }],
+    "centerforsecuritypolicy.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.bbc.com/news/world-us-canada-35037943 ; "
-    },
-    "charismanews.com": {
+    }],
+    "charismanews.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "minimal factual reporting despite being \"news'"
-    },
-    "citizensunited.org": {
+    }],
+    "citizensunited.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "loaded language etc."
-    },
-    "conservapedia.com": {
+    }],
+    "conservapedia.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativefiringline.com": {
+    }],
+    "conservativefiringline.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "conservativehq.com": {
+    }],
+    "conservativehq.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://conservativehq.com/article/24945-f-bomb-opposition-president-trump"
-    },
-    "conservativepapers.com": {
+    }],
+    "conservativepapers.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "incorrect/uncited data, citing other sources labeled as bias"
-    },
-    "conservativespirit.com": {
+    }],
+    "conservativespirit.com": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativestate.com": {
+    }],
+    "conservativestate.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "links to other borderline fake, but mostly just propagandistic websites"
-    },
-    "conservativetribune.com": {
+    }],
+    "conservativetribune.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "countercurrentnews.com": {
+    }],
+    "countercurrentnews.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "counterjihad.com": {
+    }],
+    "counterjihad.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "cowgernation.com": {
+    }],
+    "cowgernation.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailynewsbin.com": {
+    }],
+    "dailynewsbin.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailypoliticsusa.com": {
+    }],
+    "dailypoliticsusa.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailysignal.com": {
+    }],
+    "dailysignal.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailytelegraph.com.au": {
+    }],
+    "dailytelegraph.com.au": [{
         "type": "bias",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": "australian tabloid mag"
-    },
-    "dailywire.com": {
+    }],
+    "dailywire.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "darkpolitricks.com": {
+    }],
+    "darkpolitricks.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "DeadlyClear.wordpress.com": {
+    }],
+    "DeadlyClear.wordpress.com": [{
         "type": "bias",
         "2nd type": "fake news",
         "3rd type": "",
         "Source Notes (things to know?)": "Not a personal website, owned by Project Maui, Inc. Makes unverifiable extraordinary claims, seems to be advertising for lawyers with a history of legal reprimands."
-    },
-    "debunkingskeptics.com": {
+    }],
+    "debunkingskeptics.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "Science doesn't mean what they think it means"
-    },
-    "defenddemocracy.press": {
+    }],
+    "defenddemocracy.press": [{
         "type": "bias",
         "2nd type": "political",
         "3rd type": "",
         "Source Notes (things to know?)": "editorial board as stated on about us seem to be legitimate academics, and originally authored content byline are academics, although not able to find a clear link between edu pages and these authors' work on this website. Many 3rd party articles are linked, sources provided. These articles are aggregated from other more clearly biased sites i.e. world socialist web site (wswg.org), rt.com, sputniknews.com."
-    },
-    "DollarVigilante.com": {
+    }],
+    "DollarVigilante.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "anarcho-capitalist blog"
-    },
-    "EagleRising.com": {
+    }],
+    "EagleRising.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "elelephantintheroom.blogspot.com": {
+    }],
+    "elelephantintheroom.blogspot.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "endingthefed.com": {
+    }],
+    "endingthefed.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "endtime.com": {
+    }],
+    "endtime.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "Political",
         "Source Notes (things to know?)": "Not sure about this one. zany religious prophecy/not really conspiracy"
-    },
-    "extraclubmagazine.com": {
+    }],
+    "extraclubmagazine.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "fake",
         "Source Notes (things to know?)": "vacillates between outright fake and misleading stories"
-    },
-    "federalistpress.com": {
+    }],
+    "federalistpress.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "firearmscoalition.org": {
+    }],
+    "firearmscoalition.org": [{
         "type": "bias",
         "2nd type": "blog",
         "3rd type": "",
         "Source Notes (things to know?)": "A single-issue blog, it hasn't been updated since August 2016. It talks about guns, has lots of dead links, and has trouble distinguishing between legitimate and illegitimate sources."
-    },
-    "freakoutnation.com": {
+    }],
+    "freakoutnation.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "FreeBeacon.com": {
+    }],
+    "FreeBeacon.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "FreedomsPhoenix.com": {
+    }],
+    "FreedomsPhoenix.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "freedomworldnews.com": {
+    }],
+    "freedomworldnews.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "frontpagemag.com": {
+    }],
+    "frontpagemag.com": [{
         "type": "bias",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": "Part of David Horowitz' Freedom Center"
-    },
-    "gulagbound.com": {
+    }],
+    "gulagbound.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "heartland.org": {
+    }],
+    "heartland.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.sourcewatch.org/index.php/Heartland_Institute"
-    },
-    "heresyblog.net": {
+    }],
+    "heresyblog.net": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "rumor",
         "Source Notes (things to know?)": ""
-    },
-    "horowitzfreedomcenter.org": {
+    }],
+    "horowitzfreedomcenter.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ihavethetruth.com": {
+    }],
+    "ihavethetruth.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "fake",
         "Source Notes (things to know?)": ""
-    },
-    "ilovemyfreedom.org": {
+    }],
+    "ilovemyfreedom.org": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "informetoday.com": {
+    }],
+    "informetoday.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "instaworldnews.com": {
+    }],
+    "instaworldnews.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "intrepidreport.com": {
+    }],
+    "intrepidreport.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "investmentwatchblog.com": {
+    }],
+    "investmentwatchblog.com": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "jamesrgrangerjr.com": {
+    }],
+    "jamesrgrangerjr.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "journal-neo.org": {
+    }],
+    "journal-neo.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "katehon.com": {
+    }],
+    "katehon.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lewrockwell.com": {
+    }],
+    "lewrockwell.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "political",
         "Source Notes (things to know?)": ""
-    },
-    "libertyunyielding.com": {
+    }],
+    "libertyunyielding.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lifeandabout.com": {
+    }],
+    "lifeandabout.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lifenews.com": {
+    }],
+    "lifenews.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "liveactionnews.org": {
+    }],
+    "liveactionnews.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "makeamericagreattoday.com": {
+    }],
+    "makeamericagreattoday.com": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "meanlefthook.com": {
+    }],
+    "meanlefthook.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "molonlabemedia.com": {
+    }],
+    "molonlabemedia.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "moonofalabama.org": {
+    }],
+    "moonofalabama.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newslogue.com": {
+    }],
+    "newslogue.com": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsninja2012.com": {
+    }],
+    "newsninja2012.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "oathkeepers.org": {
+    }],
+    "oathkeepers.org": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/group/oath-keepers"
-    },
-    "occupyliberals.com": {
+    }],
+    "occupyliberals.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "off-guardian.org": {
+    }],
+    "off-guardian.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "oftwominds.com": {
+    }],
+    "oftwominds.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "openmindmagazine.com": {
+    }],
+    "openmindmagazine.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "orientalreview.org": {
+    }],
+    "orientalreview.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "palmerreport.com": {
+    }],
+    "palmerreport.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "patdollar.com": {
+    }],
+    "patdollar.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "patriotchronicle.com": {
+    }],
+    "patriotchronicle.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "patriotnewsdaily.com": {
+    }],
+    "patriotnewsdaily.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "patriotpost.us": {
+    }],
+    "patriotpost.us": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://mediabiasfactcheck.com/the-patriot-post/ ; https://patriotpost.us/posts/48002 ; https://patriotpost.us/alexander/48000"
-    },
-    "patriotrising.com": {
+    }],
+    "patriotrising.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "patriotupdate.com": {
+    }],
+    "patriotupdate.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "paulcraigroberts.org": {
+    }],
+    "paulcraigroberts.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "ex: http://www.paulcraigroberts.org/2016/12/10/has-liberty-departed-from-america-paul-craig-roberts/ "
-    },
-    "platosguns.com": {
+    }],
+    "platosguns.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "politicalcult.com": {
+    }],
+    "politicalcult.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "pravda.ru": {
+    }],
+    "pravda.ru": [{
         "type": "bias",
         "2nd type": "rumor",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "pravdareport.com": {
+    }],
+    "pravdareport.com": [{
         "type": "bias",
         "2nd type": "rumor",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": "redirects to pravda.ru"
-    },
-    "presstv.com": {
+    }],
+    "presstv.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "presstv.ir": {
+    }],
+    "presstv.ir": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to presstv.com"
-    },
-    "progressivestoday.com": {
+    }],
+    "progressivestoday.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://mediabiasfactcheck.com/progressives-today/"
-    },
-    "projectveritas.com": {
+    }],
+    "projectveritas.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "political",
         "Source Notes (things to know?)": ""
-    },
-    "qpolitical.com": {
+    }],
+    "qpolitical.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "junksci",
         "Source Notes (things to know?)": ""
-    },
-    "readconservatives.news": {
+    }],
+    "readconservatives.news": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "reagancoalition.com": {
+    }],
+    "reagancoalition.com": [{
         "type": "bias",
         "2nd type": "fake",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "realtimepolitics.com": {
+    }],
+    "realtimepolitics.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "redflagnews.com": {
+    }],
+    "redflagnews.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "redstatewatcher.com": {
+    }],
+    "redstatewatcher.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "regated.com": {
+    }],
+    "regated.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rightalert.com": {
+    }],
+    "rightalert.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rightwingnews.com": {
+    }],
+    "rightwingnews.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "russia-insider.com": {
+    }],
+    "russia-insider.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "SJLendman.Blogspot.com": {
+    }],
+    "SJLendman.Blogspot.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sputniknews.com": {
+    }],
+    "sputniknews.com": [{
         "type": "bias",
         "2nd type": "state",
         "3rd type": "fake",
         "Source Notes (things to know?)": ""
-    },
-    "thefederalistpapers.org": {
+    }],
+    "thefederalistpapers.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thegatewaypundit.com": {
+    }],
+    "thegatewaypundit.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "thenewamerican.com": {
+    }],
+    "thenewamerican.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thenewsdoctors.com": {
+    }],
+    "thenewsdoctors.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "therealstrategy.com": {
+    }],
+    "therealstrategy.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "hate",
         "Source Notes (things to know?)": "black lives matter content spews a lot of racist info"
-    },
-    "thewatchtowers.com": {
+    }],
+    "thewatchtowers.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "truepundit.com": {
+    }],
+    "truepundit.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "truthandaction.org": {
+    }],
+    "truthandaction.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "truthkings.com": {
+    }],
+    "truthkings.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "junksci",
         "Source Notes (things to know?)": ""
-    },
-    "truthrevolt.org": {
+    }],
+    "truthrevolt.org": [{
         "type": "bias",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "unclesamsmisguidedchildren.com": {
+    }],
+    "unclesamsmisguidedchildren.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "unz.com": {
+    }],
+    "unz.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usapoliticstoday.com": {
+    }],
+    "usapoliticstoday.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "USAWatchdog.com": {
+    }],
+    "USAWatchdog.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "uschronicle.com": {
+    }],
+    "uschronicle.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "hate",
         "Source Notes (things to know?)": ""
-    },
-    "usherald.com": {
+    }],
+    "usherald.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "fake",
         "Source Notes (things to know?)": ""
-    },
-    "vdare.com": {
+    }],
+    "vdare.com": [{
         "type": "bias",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "veteranstoday.com": {
+    }],
+    "veteranstoday.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "washingtonsblog.com": {
+    }],
+    "washingtonsblog.com": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "satire",
         "Source Notes (things to know?)": "Site notes it sometimes contains parody"
-    },
-    "wearechange.org": {
+    }],
+    "wearechange.org": [{
         "type": "bias",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "westernjournalism.com": {
+    }],
+    "westernjournalism.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "winningdemocrats.com": {
+    }],
+    "winningdemocrats.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wnd.com": {
+    }],
+    "wnd.com": [{
         "type": "bias",
         "2nd type": "clickbait",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "worldnewspolitics.com": {
+    }],
+    "worldnewspolitics.com": [{
         "type": "bias",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Youngcons.com": {
+    }],
+    "Youngcons.com": [{
         "type": "bias",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "addictinginfo.org": {
+    }],
+    "addictinginfo.org": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "amplifyingglass.com": {
+    }],
+    "amplifyingglass.com": [{
         "type": "clickbait",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "amusmentic.com": {
+    }],
+    "amusmentic.com": [{
         "type": "clickbait",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "automotostar.com": {
+    }],
+    "automotostar.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bients.com": {
+    }],
+    "bients.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bigbluevision.org": {
+    }],
+    "bigbluevision.org": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bipartisanreport.com": {
+    }],
+    "bipartisanreport.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "blacklistednews.com": {
+    }],
+    "blacklistednews.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bluenationreview.com": {
+    }],
+    "bluenationreview.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "breaking911.com": {
+    }],
+    "breaking911.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "chicksontheright.com": {
+    }],
+    "chicksontheright.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "educateinspirechange.org/health": {
+    }],
+    "educateinspirechange.org/health": [{
         "type": "clickbait",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "elitereaders.com": {
+    }],
+    "elitereaders.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "heatst.com": {
+    }],
+    "heatst.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "indiaarising.com": {
+    }],
+    "indiaarising.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "liberalamerica.org": {
+    }],
+    "liberalamerica.org": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "libertywritersnews.com": {
+    }],
+    "libertywritersnews.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "lifesitenews.com": {
+    }],
+    "lifesitenews.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lifezette.com": {
+    }],
+    "lifezette.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "livevote.com": {
+    }],
+    "livevote.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lovethispic.com": {
+    }],
+    "lovethispic.com": [{
         "type": "clickbait",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "notallowedto.com": {
+    }],
+    "notallowedto.com": [{
         "type": "clickbait",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nymeta.co": {
+    }],
+    "nymeta.co": [{
         "type": "clickbait",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": "Entertainment website "
-    },
-    "occupydemocrats.com": {
+    }],
+    "occupydemocrats.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "other98.com": {
+    }],
+    "other98.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "politicususa.com": {
+    }],
+    "politicususa.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "remedydaily.com": {
+    }],
+    "remedydaily.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "topinfopost.com": {
+    }],
+    "topinfopost.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "TrueActivist.com": {
+    }],
+    "TrueActivist.com": [{
         "type": "clickbait",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "twitchy.com": {
+    }],
+    "twitchy.com": [{
         "type": "clickbait",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "uslifetoday.com": {
+    }],
+    "uslifetoday.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "doesn't appear to be currently updated"
-    },
-    "usuncut.com": {
+    }],
+    "usuncut.com": [{
         "type": "clickbait",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "viraltube.nl": {
+    }],
+    "viraltube.nl": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "yournationnews.com": {
+    }],
+    "yournationnews.com": [{
         "type": "clickbait",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "yournewswire.com": {
+    }],
+    "yournewswire.com": [{
         "type": "clickbait",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "21stcenturywire.com": {
+    }],
+    "21stcenturywire.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "82.221.129.208": {
+    }],
+    "82.221.129.208": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "abeldanger.net": {
+    }],
+    "abeldanger.net": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "abovetopsecret.com": {
+    }],
+    "abovetopsecret.com": [{
         "type": "conspiracy",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "activistpost.com": {
+    }],
+    "activistpost.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Alt-Market.com": {
+    }],
+    "Alt-Market.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americanfreepress.net": {
+    }],
+    "americanfreepress.net": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americanreviewer.com": {
+    }],
+    "americanreviewer.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "angrypatriotmovement.com": {
+    }],
+    "angrypatriotmovement.com": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "assassinationscience.com": {
+    }],
+    "assassinationscience.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "awarenessact.com": {
+    }],
+    "awarenessact.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "awdnews.com": {
+    }],
+    "awdnews.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "twitter account deleted?"
-    },
-    "BB4SP.com": {
+    }],
+    "BB4SP.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "fake",
         "Source Notes (things to know?)": ""
-    },
-    "blackgenocide.org": {
+    }],
+    "blackgenocide.org": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "hate",
         "Source Notes (things to know?)": ""
-    },
-    "BullionBullsCanada.com": {
+    }],
+    "BullionBullsCanada.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "The \"one\" bank"
-    },
-    "canadafreepress.com": {
+    }],
+    "canadafreepress.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "concisepolitics.com": {
+    }],
+    "concisepolitics.com": [{
         "type": "conspiracy",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativerefocus.com": {
+    }],
+    "conservativerefocus.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conspiracyplanet.com": {
+    }],
+    "conspiracyplanet.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conspiracywire.com": {
+    }],
+    "conspiracywire.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "corbettreport.com": {
+    }],
+    "corbettreport.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "countdowntozerotime.com": {
+    }],
+    "countdowntozerotime.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "counterpsyops.com": {
+    }],
+    "counterpsyops.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "cryptogon.com": {
+    }],
+    "cryptogon.com": [{
         "type": "conspiracy",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "copy-pasted commentary from various news & 'news' sources"
-    },
-    "dailyoccupation.com": {
+    }],
+    "dailyoccupation.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dataasylum.com": {
+    }],
+    "dataasylum.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "davidwolfe.com": {
+    }],
+    "davidwolfe.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dcclothesline.com": {
+    }],
+    "dcclothesline.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "disclosuremedia.net": {
+    }],
+    "disclosuremedia.net": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Dont-Tread-On.Me": {
+    }],
+    "Dont-Tread-On.Me": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "doesn't seem to be updating anymore"
-    },
-    "Dutchsinse.com": {
+    }],
+    "Dutchsinse.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "weather control"
-    },
-    "EbolaHoax.com": {
+    }],
+    "EbolaHoax.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "domain for sale"
-    },
-    "educate-yourself.org": {
+    }],
+    "educate-yourself.org": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "electionnightgatekeepers.com": {
+    }],
+    "electionnightgatekeepers.com": [{
         "type": "conspiracy",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "endoftheamericandream.com": {
+    }],
+    "endoftheamericandream.com": [{
         "type": "Conspiracy",
         "2nd type": "Fake",
         "3rd type": "Political",
         "Source Notes (things to know?)": "Traffics in religious conspiracy theories and poorly sourced pro-Trump propaganda"
-    },
-    "Expose1933.com": {
+    }],
+    "Expose1933.com": [{
         "type": "conspiracy",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": "references to \"white genocide\" and \"race mixing\""
-    },
-    "eyeopening.info": {
+    }],
+    "eyeopening.info": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "familysecuritymatters.org": {
+    }],
+    "familysecuritymatters.org": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fellowshipoftheminds.com": {
+    }],
+    "fellowshipoftheminds.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fourwinds10.net": {
+    }],
+    "fourwinds10.net": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fprnradio.com": {
+    }],
+    "fprnradio.com": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "FreedomForceInternational.com": {
+    }],
+    "FreedomForceInternational.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "global warming denial"
-    },
-    "freedomoutpost.com": {
+    }],
+    "freedomoutpost.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fromthetrenchesworldreport.com": {
+    }],
+    "fromthetrenchesworldreport.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "gaia.com": {
+    }],
+    "gaia.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "gangstergovernment.com": {
+    }],
+    "gangstergovernment.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "globalresearch.ca": {
+    }],
+    "globalresearch.ca": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "godlikeproductions.com": {
+    }],
+    "godlikeproductions.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "govtslaves.info": {
+    }],
+    "govtslaves.info": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "greanvillepost.com": {
+    }],
+    "greanvillepost.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "hangthebankers.com": {
+    }],
+    "hangthebankers.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "henrymakow.com": {
+    }],
+    "henrymakow.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "humansarefree.com": {
+    }],
+    "humansarefree.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "illuminati-news.com": {
+    }],
+    "illuminati-news.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "infiniteunknown.net": {
+    }],
+    "infiniteunknown.net": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "9/11 was an inside job"
-    },
-    "informationclearinghouse.info": {
+    }],
+    "informationclearinghouse.info": [{
         "type": "conspiracy",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "infowars.com": {
+    }],
+    "infowars.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "intellihub.com": {
+    }],
+    "intellihub.com": [{
         "type": "conspiracy",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "investmentresearchdynamics.com": {
+    }],
+    "investmentresearchdynamics.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ITCCS.org": {
+    }],
+    "ITCCS.org": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "jesus-is-savior.com": {
+    }],
+    "jesus-is-savior.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "jihadwatch.org": {
+    }],
+    "jihadwatch.org": [{
         "type": "conspiracy",
         "2nd type": "hate",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "jonesreport.com": {
+    }],
+    "jonesreport.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "knowledgeoftoday.org": {
+    }],
+    "knowledgeoftoday.org": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.knowledgeoftoday.org/2012/02/illuminati-secret-hidden-from-masses.html"
-    },
-    "libertymovementradio.com": {
+    }],
+    "libertymovementradio.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "libertytalk.fm": {
+    }],
+    "libertytalk.fm": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "libertyvideos.org": {
+    }],
+    "libertyvideos.org": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "militianews.com": {
+    }],
+    "militianews.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "hate",
         "Source Notes (things to know?)": ""
-    },
-    "nasamoonhoax.com": {
+    }],
+    "nasamoonhoax.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "NationalUFOCenter.com": {
+    }],
+    "NationalUFOCenter.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nationindistress.weebly.com": {
+    }],
+    "nationindistress.weebly.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "neonnettle.com": {
+    }],
+    "neonnettle.com": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "bias",
         "Source Notes (things to know?)": "http://www.neonnettle.com/features/732-pizzagate-worldwide-pedophile-ring-bust-begins-media-remains-silent-"
-    },
-    "newstarget.com": {
+    }],
+    "newstarget.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nodisinfo.com": {
+    }],
+    "nodisinfo.com": [{
         "type": "conspiracy",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "NoMoreFakeNews.com": {
+    }],
+    "NoMoreFakeNews.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nowtheendbegins.com": {
+    }],
+    "nowtheendbegins.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "OffGridSurvival.com": {
+    }],
+    "OffGridSurvival.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "http://offgridsurvival.com/shadowgovernmentwars/"
-    },
-    "oilgeopolitics.net": {
+    }],
+    "oilgeopolitics.net": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "pamelageller.com": {
+    }],
+    "pamelageller.com": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "politicalblindspot.com": {
+    }],
+    "politicalblindspot.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": "ex: vaccines are a way for the CIA to spy on us"
-    },
-    "prepperwebsite.com": {
+    }],
+    "prepperwebsite.com": [{
         "type": "conspiracy",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "prisonplanet.com": {
+    }],
+    "prisonplanet.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "prisonplanet.tv": {
+    }],
+    "prisonplanet.tv": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rense.com": {
+    }],
+    "rense.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rumormillnews.com": {
+    }],
+    "rumormillnews.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "rumor",
         "Source Notes (things to know?)": ""
-    },
-    "secretsofthefed.com": {
+    }],
+    "secretsofthefed.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sentinelblog.com": {
+    }],
+    "sentinelblog.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sheepkillers.com": {
+    }],
+    "sheepkillers.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "shoebat.com": {
+    }],
+    "shoebat.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Silver-Coin-Investor. com": {
+    }],
+    "Silver-Coin-Investor. com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "SilverBearCafe.com": {
+    }],
+    "SilverBearCafe.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "SilverDoctors.com": {
+    }],
+    "SilverDoctors.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "SilverStealers.net": {
+    }],
+    "SilverStealers.net": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "skeptiko.com": {
+    }],
+    "skeptiko.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sonsoflibertyradio.com": {
+    }],
+    "sonsoflibertyradio.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": " unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "thedailysheeple.com": {
+    }],
+    "thedailysheeple.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theeconomiccollapseblog.com": {
+    }],
+    "theeconomiccollapseblog.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theeventchronicle.com": {
+    }],
+    "theeventchronicle.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "TheExtinctionProtocol.com": {
+    }],
+    "TheExtinctionProtocol.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theforbiddenknowledge.com": {
+    }],
+    "theforbiddenknowledge.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thelibertybeacon.com": {
+    }],
+    "thelibertybeacon.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "themindunleashed.com": {
+    }],
+    "themindunleashed.com": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "themindunleashed.org": {
+    }],
+    "themindunleashed.org": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "thephaser.com": {
+    }],
+    "thephaser.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thepoliticalinsider.com": {
+    }],
+    "thepoliticalinsider.com": [{
         "type": "conspiracy",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "truthbroadcastnetwork.com": {
+    }],
+    "truthbroadcastnetwork.com": [{
         "type": "conspiracy",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "truthfrequencyradio.com": {
+    }],
+    "truthfrequencyradio.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ufoholic.com": {
+    }],
+    "ufoholic.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wakeupthesheep.com": {
+    }],
+    "wakeupthesheep.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wakingupwisconsin.com": {
+    }],
+    "wakingupwisconsin.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "weshapelife.org": {
+    }],
+    "weshapelife.org": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "whatdoesitmean.com": {
+    }],
+    "whatdoesitmean.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "whatreallyhappened.com": {
+    }],
+    "whatreallyhappened.com": [{
         "type": "conspiracy",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "whowhatwhy.org": {
+    }],
+    "whowhatwhy.org": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "9/11 = FBI coverup"
-    },
-    "wikispooks.com": {
+    }],
+    "wikispooks.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Willyloman.wordpress.com": {
+    }],
+    "Willyloman.wordpress.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "worldtruth.tv": {
+    }],
+    "worldtruth.tv": [{
         "type": "conspiracy",
         "2nd type": "junksci",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "X22Report.com": {
+    }],
+    "X22Report.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "website down"
-    },
-    "zerohedge.com": {
+    }],
+    "zerohedge.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "zootfeed.com": {
+    }],
+    "zootfeed.com": [{
         "type": "conspiracy",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "16wmpo.com": {
+    }],
+    "16wmpo.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "24newsflash.com": {
+    }],
+    "24newsflash.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "24wpn.com": {
+    }],
+    "24wpn.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "70news.wordpress.com": {
+    }],
+    "70news.wordpress.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "abcnews.com.co": {
+    }],
+    "abcnews.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "abcnewsgo.co": {
+    }],
+    "abcnewsgo.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "alternativemediasyndicate.com": {
+    }],
+    "alternativemediasyndicate.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://alternativemediasyndicate.com/2017/02/02/police-raid-standing-rock-camp-destroy-tipis-burning-remains/"
-    },
-    "americannews.com": {
+    }],
+    "americannews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americanoverlook.com": {
+    }],
+    "americanoverlook.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americanpoliticnews.co": {
+    }],
+    "americanpoliticnews.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "americanpresident.co": {
+    }],
+    "americanpresident.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "Amposts.com": {
+    }],
+    "Amposts.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "anews24.org/": {
+    }],
+    "anews24.org/": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "anonjekloy.tk": {
+    }],
+    "anonjekloy.tk": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "aurora-news.us": {
+    }],
+    "aurora-news.us": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "beforeitsnews.com": {
+    }],
+    "beforeitsnews.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "rumor",
         "Source Notes (things to know?)": ""
-    },
-    "bighairynews.com": {
+    }],
+    "bighairynews.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "blackinusrancenews.com": {
+    }],
+    "blackinusrancenews.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "bostonleader.com": {
+    }],
+    "bostonleader.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "buzzfeedusa.com": {
+    }],
+    "buzzfeedusa.com": [{
         "type": "fake",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "cannasos.com": {
+    }],
+    "cannasos.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "cap-news.com": {
+    }],
+    "cap-news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "cbsnews.com.co": {
+    }],
+    "cbsnews.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "channel-7-news.com": {
+    }],
+    "channel-7-news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "channel18news.com": {
+    }],
+    "channel18news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "cityworldnews.com": {
+    }],
+    "cityworldnews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "civictribune.com": {
+    }],
+    "civictribune.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "clashdaily.com": {
+    }],
+    "clashdaily.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "cnnews3.com": {
+    }],
+    "cnnews3.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "coed.com": {
+    }],
+    "coed.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "conservativebyte.com": {
+    }],
+    "conservativebyte.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativedailypost.com": {
+    }],
+    "conservativedailypost.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "This website is a weird mix of outright fake news and some stuff that looks more reliable. "
-    },
-    "conservativefighters.com": {
+    }],
+    "conservativefighters.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativeflashnews.com": {
+    }],
+    "conservativeflashnews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "conservativeinfidel.com": {
+    }],
+    "conservativeinfidel.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailybuzzlive.com": {
+    }],
+    "dailybuzzlive.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailyheadlines.com": {
+    }],
+    "dailyheadlines.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailyheadlines.net": {
+    }],
+    "dailyheadlines.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailyinfobox.com": {
+    }],
+    "dailyinfobox.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailynews10.com": {
+    }],
+    "dailynews10.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailynews5.com": {
+    }],
+    "dailynews5.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailynewsposts.info": {
+    }],
+    "dailynewsposts.info": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailysurge.com": {
+    }],
+    "dailysurge.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailyusaupdate.com": {
+    }],
+    "dailyusaupdate.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "damnleaks.com": {
+    }],
+    "damnleaks.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dcgazette.com": {
+    }],
+    "dcgazette.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ddemocraticunderground.com": {
+    }],
+    "ddemocraticunderground.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "denverguardian.com": {
+    }],
+    "denverguardian.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "departed.co": {
+    }],
+    "departed.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to dcposts.com "
-    },
-    "departedmedia.com": {
+    }],
+    "departedmedia.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "DIYhours.net": {
+    }],
+    "DIYhours.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "donaldtrumpnews.co": {
+    }],
+    "donaldtrumpnews.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "DonaldTrumpPotus45.com": {
+    }],
+    "DonaldTrumpPotus45.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "downtrend.com": {
+    }],
+    "downtrend.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "drudgereport.com.co": {
+    }],
+    "drudgereport.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "embols.com": {
+    }],
+    "embols.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Empirehearland.com": {
+    }],
+    "Empirehearland.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "empireherald.com": {
+    }],
+    "empireherald.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "empirenews.net": {
+    }],
+    "empirenews.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "en-vovle.com": {
+    }],
+    "en-vovle.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "enabon.com": {
+    }],
+    "enabon.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "No authors, no contact, just copy/pasted from other questionable sites"
-    },
-    "enduringvision.com": {
+    }],
+    "enduringvision.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "enhlive.com": {
+    }],
+    "enhlive.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "eutopia.buzz": {
+    }],
+    "eutopia.buzz": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "fakingnews.com": {
+    }],
+    "fakingnews.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": "fiction disclaimer on bottom of home screen "
-    },
-    "fedsalert.com": {
+    }],
+    "fedsalert.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "flashnewscorner.com": {
+    }],
+    "flashnewscorner.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "floridasunpost.com": {
+    }],
+    "floridasunpost.com": [{
         "type": "fake",
         "2nd type": "satirical",
         "3rd type": "",
         "Source Notes (things to know?)": "I concur: http://mashable.com/2016/10/03/fake-news-story-man-marries-granddaughter/#QvpAzP.e8Oqb "
-    },
-    "freedomdaily.com": {
+    }],
+    "freedomdaily.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "freshdailyreport.com": {
+    }],
+    "freshdailyreport.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "givemeliberity01.com": {
+    }],
+    "givemeliberity01.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "globalpoliticsnow.com": {
+    }],
+    "globalpoliticsnow.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "goneleft.com": {
+    }],
+    "goneleft.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "gopthedailydose.com": {
+    }],
+    "gopthedailydose.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "gummypost.com": {
+    }],
+    "gummypost.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "healthycareandbeauty.com": {
+    }],
+    "healthycareandbeauty.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "healthyworldhouse.com": {
+    }],
+    "healthyworldhouse.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "immediatesafety.org": {
+    }],
+    "immediatesafety.org": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://immediatesafety.org/dnc-to-hand-debbie-wasserman-schultz-over-to-isis-for-beheadding/"
-    },
-    "infostormer.com": {
+    }],
+    "infostormer.com": [{
         "type": "fake",
         "2nd type": "hate",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "interestingdailynews.com": {
+    }],
+    "interestingdailynews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "intrendtoday.com": {
+    }],
+    "intrendtoday.com": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "itaglive.com": {
+    }],
+    "itaglive.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ItMakesSenseBlog.com": {
+    }],
+    "ItMakesSenseBlog.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "iwanttoexplore.com": {
+    }],
+    "iwanttoexplore.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "mostly turned back into car website"
-    },
-    "KMT11.com": {
+    }],
+    "KMT11.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "konkonsagh.biz": {
+    }],
+    "konkonsagh.biz": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "krbcnews.com": {
+    }],
+    "krbcnews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ky12news.com": {
+    }],
+    "ky12news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "ladylibertynews.com": {
+    }],
+    "ladylibertynews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "lastdeplorables.com": {
+    }],
+    "lastdeplorables.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "learnprogress.org": {
+    }],
+    "learnprogress.org": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.learnprogress.org/white-house-website-sell-jewelry/"
-    },
-    "liberalplug.com": {
+    }],
+    "liberalplug.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "libertyalliance.com": {
+    }],
+    "libertyalliance.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "libertyblitzkrieg.com": {
+    }],
+    "libertyblitzkrieg.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "local31news.com": {
+    }],
+    "local31news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "madworldnews.com": {
+    }],
+    "madworldnews.com": [{
         "type": "unreliable",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "maganews.co": {
+    }],
+    "maganews.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "majorthoughts.com": {
+    }],
+    "majorthoughts.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "mediamass.net": {
+    }],
+    "mediamass.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "megynkelly.us": {
+    }],
+    "megynkelly.us": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "mentor2day.com": {
+    }],
+    "mentor2day.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "metropolitanworlds.com": {
+    }],
+    "metropolitanworlds.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "mpidailymagazine.com": {
+    }],
+    "mpidailymagazine.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "mrconservative.com": {
+    }],
+    "mrconservative.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "msnbc.website": {
+    }],
+    "msnbc.website": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "myfreshnews.com": {
+    }],
+    "myfreshnews.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "found linked from iwanttoexplore.com"
-    },
-    "myzonetoday.com": {
+    }],
+    "myzonetoday.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nationonenews.com": {
+    }],
+    "nationonenews.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nbc.com.co": {
+    }],
+    "nbc.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nephef.com": {
+    }],
+    "nephef.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newpoliticstoday.com": {
+    }],
+    "newpoliticstoday.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "news4ktla.com": {
+    }],
+    "news4ktla.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsbbc.net": {
+    }],
+    "newsbbc.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsbreakshere.com": {
+    }],
+    "newsbreakshere.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newsbysquad.com": {
+    }],
+    "newsbysquad.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newsdaily12.com": {
+    }],
+    "newsdaily12.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newsexaminer.net": {
+    }],
+    "newsexaminer.net": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsfrompolitics.com": {
+    }],
+    "newsfrompolitics.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsleak.co": {
+    }],
+    "newsleak.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newslo.com": {
+    }],
+    "newslo.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to http://politicops.com/ (12/2)"
-    },
-    "newsmagazine.com": {
+    }],
+    "newsmagazine.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "newswatch28.com": {
+    }],
+    "newswatch28.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newswatch33.com": {
+    }],
+    "newswatch33.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newswithviews.com": {
+    }],
+    "newswithviews.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "now8news.com": {
+    }],
+    "now8news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "onepoliticalplaza.com": {
+    }],
+    "onepoliticalplaza.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "onlineconservativepress.com": {
+    }],
+    "onlineconservativepress.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "openmagazines.com": {
+    }],
+    "openmagazines.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "pakalertpress.com": {
+    }],
+    "pakalertpress.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicalo.com": {
+    }],
+    "politicalo.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicalsitenews.com": {
+    }],
+    "politicalsitenews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicalupdator.com": {
+    }],
+    "politicalupdator.com": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "politicono.com": {
+    }],
+    "politicono.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "politicsusanews.com": {
+    }],
+    "politicsusanews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "president45donaldtrump.com": {
+    }],
+    "president45donaldtrump.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "prntly.com": {
+    }],
+    "prntly.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "proamericanews.com": {
+    }],
+    "proamericanews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "proudcons.com": {
+    }],
+    "proudcons.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "react365.com": {
+    }],
+    "react365.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "fake news generator for pranking friends"
-    },
-    "realnewsrightnow.com": {
+    }],
+    "realnewsrightnow.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "redcountry.us": {
+    }],
+    "redcountry.us": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "redrocktribune.com": {
+    }],
+    "redrocktribune.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "religionmind.com": {
+    }],
+    "religionmind.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "rhotv.com": {
+    }],
+    "rhotv.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rickwells.us": {
+    }],
+    "rickwells.us": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rilenews.com": {
+    }],
+    "rilenews.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rogue-nation3.com": {
+    }],
+    "rogue-nation3.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "rumorjournal.com": {
+    }],
+    "rumorjournal.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "smag31.com": {
+    }],
+    "smag31.com": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "socialeverythings.com": {
+    }],
+    "socialeverythings.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "stormcloudsgathering.com": {
+    }],
+    "stormcloudsgathering.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "subjectpolitics.com": {
+    }],
+    "subjectpolitics.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "success-street.com": {
+    }],
+    "success-street.com": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": "http://success-street.com/2017/01/18/wow-obama-orders-life-sized-bronze-statute-permanently-installed-white-house/"
-    },
-    "supremepatriot.com": {
+    }],
+    "supremepatriot.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "TDTalliance.com": {
+    }],
+    "TDTalliance.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "teaparty.org": {
+    }],
+    "teaparty.org": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thatviralfeed.net": {
+    }],
+    "thatviralfeed.net": [{
         "type": "fake",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "the-insider.co": {
+    }],
+    "the-insider.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "theamericanindependent.wordpress.com": {
+    }],
+    "theamericanindependent.wordpress.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thebigriddle.com": {
+    }],
+    "thebigriddle.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thebostontribune.com": {
+    }],
+    "thebostontribune.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thecommonsenseshow.com": {
+    }],
+    "thecommonsenseshow.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thecontroversialfiles.net": {
+    }],
+    "thecontroversialfiles.net": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thefreepatriot.org": {
+    }],
+    "thefreepatriot.org": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "theinternetpost.net": {
+    }],
+    "theinternetpost.net": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thelastgreatstand.com": {
+    }],
+    "thelastgreatstand.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "themoralofthestory.us": {
+    }],
+    "themoralofthestory.us": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thenet24h.com": {
+    }],
+    "thenet24h.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thenewyorkevening.com": {
+    }],
+    "thenewyorkevening.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "theracketreport.com": {
+    }],
+    "theracketreport.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": "I can't find disclaimers, but I think it's satirical "
-    },
-    "thereporterz.com": {
+    }],
+    "thereporterz.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "therightscoop.com": {
+    }],
+    "therightscoop.com": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": "no authors, no history, no about us, unverifiable data, etc."
-    },
-    "thetrumpmedia.com": {
+    }],
+    "thetrumpmedia.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thetruthdivision.com": {
+    }],
+    "thetruthdivision.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thetruthseeker.co.uk": {
+    }],
+    "thetruthseeker.co.uk": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "junksci",
         "Source Notes (things to know?)": "ex: NY orchestrated the asian tsunami in 2008!"
-    },
-    "theusa-news.com": {
+    }],
+    "theusa-news.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "thewashingtonpress.com": {
+    }],
+    "thewashingtonpress.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "threepercenternation.com": {
+    }],
+    "threepercenternation.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "times.com.mx": {
+    }],
+    "times.com.mx": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "tmzworldnews.com": {
+    }],
+    "tmzworldnews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "trueamericans.me": {
+    }],
+    "trueamericans.me": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "truetrumpers.com": {
+    }],
+    "truetrumpers.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "trumpvision365.com": {
+    }],
+    "trumpvision365.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "undergroundnewsreport.com": {
+    }],
+    "undergroundnewsreport.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "undergroundworldnews.com": {
+    }],
+    "undergroundworldnews.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "unitedmediapublishing.com": {
+    }],
+    "unitedmediapublishing.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "universepolitics.com": {
+    }],
+    "universepolitics.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/statements/2017/jan/03/universe-politics/fake-news-michigan-gop-elector-didnt-choose-suicid/"
-    },
-    "usa-radio.com": {
+    }],
+    "usa-radio.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usa-television.com": {
+    }],
+    "usa-television.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usa2016elections.com": {
+    }],
+    "usa2016elections.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "no longer being updated"
-    },
-    "usadailyinfo.com": {
+    }],
+    "usadailyinfo.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usadailypolitics.com": {
+    }],
+    "usadailypolitics.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usadailytime.com": {
+    }],
+    "usadailytime.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "no satire disclaimer, http://usadailytime.com/breaking-mexico-closes-borders-usa-citizens/"
-    },
-    "usadosenews.com": {
+    }],
+    "usadosenews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usafirstinformation.com": {
+    }],
+    "usafirstinformation.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usahitman.com": {
+    }],
+    "usahitman.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usainfobox.com": {
+    }],
+    "usainfobox.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "can't find satire disclaimer, patently false"
-    },
-    "usamagazinestudio.com": {
+    }],
+    "usamagazinestudio.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usanewsflash.com": {
+    }],
+    "usanewsflash.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "usanewsinsider.com": {
+    }],
+    "usanewsinsider.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "usanewspolitics.com": {
+    }],
+    "usanewspolitics.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usanewstoday.com": {
+    }],
+    "usanewstoday.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usaonlinepolitics.com": {
+    }],
+    "usaonlinepolitics.com": [{
         "type": "fake",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": "no longer being updated"
-    },
-    "usaphase.com": {
+    }],
+    "usaphase.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usapolitics24hrs.com": {
+    }],
+    "usapolitics24hrs.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usapoliticsnow.com": {
+    }],
+    "usapoliticsnow.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usapoliticszone.com": {
+    }],
+    "usapoliticszone.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usasnich.com": {
+    }],
+    "usasnich.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usasupreme.com": {
+    }],
+    "usasupreme.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usatoday.com.co": {
+    }],
+    "usatoday.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usatodaynews.me": {
+    }],
+    "usatodaynews.me": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usatwentyfour.com": {
+    }],
+    "usatwentyfour.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usconservativetoday.com": {
+    }],
+    "usconservativetoday.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usfanzone.com": {
+    }],
+    "usfanzone.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ushealthyadvisor.com": {
+    }],
+    "ushealthyadvisor.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "junksci",
         "Source Notes (things to know?)": ""
-    },
-    "ushealthylife.com": {
+    }],
+    "ushealthylife.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "usinfonews.com": {
+    }],
+    "usinfonews.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "uspoliticslive.com": {
+    }],
+    "uspoliticslive.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "uspoln.com": {
+    }],
+    "uspoln.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "uspostman.com": {
+    }],
+    "uspostman.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "vigilantcitizen.com": {
+    }],
+    "vigilantcitizen.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "viralactions.com": {
+    }],
+    "viralactions.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "viralliberty.com": {
+    }],
+    "viralliberty.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "voxtribune.com": {
+    }],
+    "voxtribune.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "washingtonfed.com": {
+    }],
+    "washingtonfed.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "washingtonpost.com.co": {
+    }],
+    "washingtonpost.com.co": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "webdaily.com": {
+    }],
+    "webdaily.com": [{
         "type": "fake",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "weeklyworldnews.com": {
+    }],
+    "weeklyworldnews.com": [{
         "type": "fake",
         "2nd type": "rumor",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": "pretty well known tabloid/fake news source"
-    },
-    "worldpoliticsus.com": {
+    }],
+    "worldpoliticsus.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "website down"
-    },
-    "worldrumor.com": {
+    }],
+    "worldrumor.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "no longer being updated?"
-    },
-    "worldstoriestoday.com": {
+    }],
+    "worldstoriestoday.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "no longer being updated?"
-    },
-    "wtoe5news.com": {
+    }],
+    "wtoe5news.com": [{
         "type": "fake",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": "https://web.archive.org/web/20161115024211/http://wtoe5news.com/us-election/pope-francis-shocks-world-endorses-donald-trump-for-president-releases-statement/"
-    },
-    "yesimright.com": {
+    }],
+    "yesimright.com": [{
         "type": "fake",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "yourfunpage.com": {
+    }],
+    "yourfunpage.com": [{
         "type": "fake",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "mostly links to rando YT videos"
-    },
-    "worldpoliticsnow.com": {
+    }],
+    "worldpoliticsnow.com": [{
         "type": "fake ",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "FarmWars.info": {
+    }],
+    "FarmWars.info": [{
         "type": "fake news",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "Much of the site is focused on anti-GMO conspiracies, with political conspiracies coming in as a close second. There are some apparent attempts to source some wild claims, but the use of unstable URLs-- intentionally or otherwise-- thwarts this."
-    },
-    "actforamerica.org/news": {
+    }],
+    "actforamerica.org/news": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "adflegal.org/media": {
+    }],
+    "adflegal.org/media": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "americanborderpatrol.com": {
+    }],
+    "americanborderpatrol.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "amren.com": {
+    }],
+    "amren.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "aryannationswordwide1488.org": {
+    }],
+    "aryannationswordwide1488.org": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "barenakedislam.com": {
+    }],
+    "barenakedislam.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "barnesreview.org": {
+    }],
+    "barnesreview.org": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "bigbluevision.com": {
+    }],
+    "bigbluevision.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "centerforsecuritypolicy.org/#articles": {
+    }],
+    "centerforsecuritypolicy.org/#articles": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "christianfightback.com": {
+    }],
+    "christianfightback.com": [{
         "type": "hate",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "creativitymovement.net/category/news/": {
+    }],
+    "creativitymovement.net/category/news/": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "dailyken.com": {
+    }],
+    "dailyken.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailystormer.com": {
+    }],
+    "dailystormer.com": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": "pretty well known neo-nazi site"
-    },
-    "darkmoon.me": {
+    }],
+    "darkmoon.me": [{
         "type": "hate",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "davidduke.com": {
+    }],
+    "davidduke.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "drrichswier.com": {
+    }],
+    "drrichswier.com": [{
         "type": "hate",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "EUTimes.net": {
+    }],
+    "EUTimes.net": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "gatesofvienna.net": {
+    }],
+    "gatesofvienna.net": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "glaringhypocrisy.com": {
+    }],
+    "glaringhypocrisy.com": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "references to \"Jew World Order\""
-    },
-    "ihr.org": {
+    }],
+    "ihr.org": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "libertyfederation.com": {
+    }],
+    "libertyfederation.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nationalvanguard.org": {
+    }],
+    "nationalvanguard.org": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.splcenter.org/fighting-hate/extremist-files/groups"
-    },
-    "npiamerica.org": {
+    }],
+    "npiamerica.org": [{
         "type": "hate",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "white supremacist think tank"
-    },
-    "returnofkings.com": {
+    }],
+    "returnofkings.com": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "themuslimissue.wordpress.com": {
+    }],
+    "themuslimissue.wordpress.com": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "therightstuff.biz": {
+    }],
+    "therightstuff.biz": [{
         "type": "hate",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "truthfeed.com": {
+    }],
+    "truthfeed.com": [{
         "type": "hate",
         "2nd type": "bias",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "whitepower.com": {
+    }],
+    "whitepower.com": [{
         "type": "hate",
         "2nd type": "conspiracy",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "AmericanKabuki.blogspot.com": {
+    }],
+    "AmericanKabuki.blogspot.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ancient-code.com": {
+    }],
+    "ancient-code.com": [{
         "type": "junksci",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "checkoutthehealthyworld.com": {
+    }],
+    "checkoutthehealthyworld.com": [{
         "type": "junksci",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "collective-evolution.com": {
+    }],
+    "collective-evolution.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "collectivelyconscious.net": {
+    }],
+    "collectivelyconscious.net": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "consciouslifenews.com": {
+    }],
+    "consciouslifenews.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dineal.com": {
+    }],
+    "dineal.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ewao.com": {
+    }],
+    "ewao.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ExperimentalVaccines.org": {
+    }],
+    "ExperimentalVaccines.org": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "foodbabe.com": {
+    }],
+    "foodbabe.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "galacticconnection.com": {
+    }],
+    "galacticconnection.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "geoengineeringwatch.org": {
+    }],
+    "geoengineeringwatch.org": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "GreenMedInfo.com": {
+    }],
+    "GreenMedInfo.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "healthimpactnews.com": {
+    }],
+    "healthimpactnews.com": [{
         "type": "junksci",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "healthnutnews.com": {
+    }],
+    "healthnutnews.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "healthy-holistic-living.com": {
+    }],
+    "healthy-holistic-living.com": [{
         "type": "junksci",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "icr.org": {
+    }],
+    "icr.org": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "in5d.com": {
+    }],
+    "in5d.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lifeprevention.com": {
+    }],
+    "lifeprevention.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "naturalblaze.com": {
+    }],
+    "naturalblaze.com": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "naturalnews.com": {
+    }],
+    "naturalnews.com": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "naturalnewsblogs.com": {
+    }],
+    "naturalnewsblogs.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rawforbeauty.com": {
+    }],
+    "rawforbeauty.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "realfarmacy.com": {
+    }],
+    "realfarmacy.com": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "realplanetnews.com": {
+    }],
+    "realplanetnews.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "responsibletechnology.org": {
+    }],
+    "responsibletechnology.org": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "revolutions2040.com": {
+    }],
+    "revolutions2040.com": [{
         "type": "junksci",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thetruthaboutcancer.com": {
+    }],
+    "thetruthaboutcancer.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "TheTruthWins.com": {
+    }],
+    "TheTruthWins.com": [{
         "type": "junksci",
         "2nd type": "conspiracy",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "wakingtimes.com": {
+    }],
+    "wakingtimes.com": [{
         "type": "junksci",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "whydontyoutrythis.com": {
+    }],
+    "whydontyoutrythis.com": [{
         "type": "junksci",
         "2nd type": "rumor",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "worldwidehealthy.com": {
+    }],
+    "worldwidehealthy.com": [{
         "type": "junksci",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailyleak.org": {
+    }],
+    "dailyleak.org": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "advocate.com": {
+    }],
+    "advocate.com": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "alternet.org": {
+    }],
+    "alternet.org": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "americannewsx.com": {
+    }],
+    "americannewsx.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "satire",
         "Source Notes (things to know?)": ""
-    },
-    "americanprogress.org": {
+    }],
+    "americanprogress.org": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "attn.com": {
+    }],
+    "attn.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "baptistnews.com": {
+    }],
+    "baptistnews.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "circulates generally reliable information from a p.o.v. but not at the expense of informational integrity "
-    },
-    "breitbart.com": {
+    }],
+    "breitbart.com": [{
         "type": "political",
         "2nd type": "unreliable",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "cato.org/blog": {
+    }],
+    "cato.org/blog": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "chroniclesmagazine.org": {
+    }],
+    "chroniclesmagazine.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "from what I gather, like the opposite of Jacobin (paleoconservative) "
-    },
-    "city-journal.org": {
+    }],
+    "city-journal.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "commentarymagazine.com": {
+    }],
+    "commentarymagazine.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "commondreams.org": {
+    }],
+    "commondreams.org": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativereview.com": {
+    }],
+    "conservativereview.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "countercurrents.org": {
+    }],
+    "countercurrents.org": [{
         "type": "political",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "This site is pretty explicit about it's p.o.v. and is coming from a political perspective but doesn't fit under how we are defining 'bias'"
-    },
-    "counterinformation.wordpress.com": {
+    }],
+    "counterinformation.wordpress.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "counterpunch.com": {
+    }],
+    "counterpunch.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "explicit POV - legit authors"
-    },
-    "counterpunch.org": {
+    }],
+    "counterpunch.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "explicit POV - legit authors"
-    },
-    "dailycaller.com": {
+    }],
+    "dailycaller.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "bias",
         "Source Notes (things to know?)": "a weird mix of info. they link to extremely biased sites (as sources) and more reliable/balanced sources"
-    },
-    "dailykos.com": {
+    }],
+    "dailykos.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "davidstockmanscontracorner.com": {
+    }],
+    "davidstockmanscontracorner.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "DeadLineLive.info": {
+    }],
+    "DeadLineLive.info": [{
         "type": "political",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dennismichaellynch.com": {
+    }],
+    "dennismichaellynch.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dissentmagazine.org": {
+    }],
+    "dissentmagazine.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "drudgereport.com": {
+    }],
+    "drudgereport.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "economicnoise.com": {
+    }],
+    "economicnoise.com": [{
         "type": "political",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "sites some problematic sources, like CNS news"
-    },
-    "ecowatch.com": {
+    }],
+    "ecowatch.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "this site claims junksci, but I read over a dozen articles w/o finding any. probably should re-check soon https://mediabiasfactcheck.com/ecowatch/"
-    },
-    "Emptywheel.net": {
+    }],
+    "Emptywheel.net": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "commentary on current events/news"
-    },
-    "filmsforaction.org": {
+    }],
+    "filmsforaction.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "foreignpolicyjournal.com": {
+    }],
+    "foreignpolicyjournal.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "legit source coming from a political perspective"
-    },
-    "freedomworks.org": {
+    }],
+    "freedomworks.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fusion.net": {
+    }],
+    "fusion.net": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": "website contains some satire "
-    },
-    "geopolmonitor.com": {
+    }],
+    "geopolmonitor.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "this website is tricky (in terms of writers using some interesting frames/language). def could use a second analysis."
-    },
-    "guardianlv.com": {
+    }],
+    "guardianlv.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "heritage.org": {
+    }],
+    "heritage.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ijr.com": {
+    }],
+    "ijr.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "jackpineradicals.com": {
+    }],
+    "jackpineradicals.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "left wing discussion site"
-    },
-    "jacobinmag.com": {
+    }],
+    "jacobinmag.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "judicialwatch.org": {
+    }],
+    "judicialwatch.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "mintpressnews.com": {
+    }],
+    "mintpressnews.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "legit source form a political perspective"
-    },
-    "mrc.org": {
+    }],
+    "mrc.org": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nakedcapitalism.com": {
+    }],
+    "nakedcapitalism.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "commentary on finance, economics, politics and power"
-    },
-    "nationalreview.com": {
+    }],
+    "nationalreview.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newcoldwar.org": {
+    }],
+    "newcoldwar.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "contains statement that site authors are \"independent, but not non-partisan\" (anti-war (Ukraine))"
-    },
-    "newscorpse.com": {
+    }],
+    "newscorpse.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.newscorpse.com/ncWP/?p=34163"
-    },
-    "oann.com": {
+    }],
+    "oann.com": [{
         "type": "political",
         "2nd type": "reliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "observer.com": {
+    }],
+    "observer.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "vacillates between some pieces that are \"bias\" and others that are \"reliable\""
-    },
-    "OCCUPY.com": {
+    }],
+    "OCCUPY.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "pjmedia.com": {
+    }],
+    "pjmedia.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "https://mediabiasfactcheck.com/pj-media/ ;  https://pjmedia.com/about-us (ground zero mosque, 'doctored climate change data')"
-    },
-    "presidentialvoting2016.com": {
+    }],
+    "presidentialvoting2016.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "unreliable",
         "Source Notes (things to know?)": ""
-    },
-    "proudemocrat.com": {
+    }],
+    "proudemocrat.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "rawstory.com": {
+    }],
+    "rawstory.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "redstate.com": {
+    }],
+    "redstate.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "resistancereport.com": {
+    }],
+    "resistancereport.com": [{
         "type": "political",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/personalities/resistance-report/"
-    },
-    "rinf.com": {
+    }],
+    "rinf.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ronpaulinstitute.org": {
+    }],
+    "ronpaulinstitute.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ruptly.tv": {
+    }],
+    "ruptly.tv": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "owned by RT"
-    },
-    "theblaze.com": {
+    }],
+    "theblaze.com": [{
         "type": "political",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thedailybeast.com": {
+    }],
+    "thedailybeast.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thefifthcolumnnews.com": {
+    }],
+    "thefifthcolumnnews.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theintercept.com": {
+    }],
+    "theintercept.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thinkprogress.org": {
+    }],
+    "thinkprogress.org": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "TomWoods.com": {
+    }],
+    "TomWoods.com": [{
         "type": "political",
         "2nd type": "unrealiable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "washingtonexaminer.com": {
+    }],
+    "washingtonexaminer.com": [{
         "type": "political",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "weeklystandard.com": {
+    }],
+    "weeklystandard.com": [{
         "type": "political",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "yellowhammernews.com": {
+    }],
+    "yellowhammernews.com": [{
         "type": "political",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "christianpost.com": {
+    }],
+    "christianpost.com": [{
         "type": "reliable",
         "2nd type": "political",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "consortiumnews.com": {
+    }],
+    "consortiumnews.com": [{
         "type": "reliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "The authors on this website are pretty reliable and the articles appear well researched"
-    },
-    "nutritionfacts.org": {
+    }],
+    "nutritionfacts.org": [{
         "type": "reliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "I read through several articles and the sources cited, and appears ok (maybe sometimes a little sensational... so if anyone has specific knowledge of this site and/or good examples of problems, feel free to link them here)"
-    },
-    "americantoday.news": {
+    }],
+    "americantoday.news": [{
         "type": "rumor",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "amtvmedia.com": {
+    }],
+    "amtvmedia.com": [{
         "type": "rumor",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bigbluedimension.com": {
+    }],
+    "bigbluedimension.com": [{
         "type": "rumor",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "christiantimesnewspaper.com": {
+    }],
+    "christiantimesnewspaper.com": [{
         "type": "rumor",
         "2nd type": "bias",
         "3rd type": "fake",
         "Source Notes (things to know?)": "https://www.nytimes.com/2017/01/18/us/fake-news-hillary-clinton-cameron-harris.html?_r=1&mtrref=t.co&gwh=1CC9755BA757D7782D8A46A6F6FBF22E&gwt=pay"
-    },
-    "express.co.uk": {
+    }],
+    "express.co.uk": [{
         "type": "rumor",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "well-known tabloid"
-    },
-    "loanpride.com": {
+    }],
+    "loanpride.com": [{
         "type": "rumor",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": "http://loanpride.com/obama-family-divorce-attorney-quit-smoking-tips/?utm_source=revcontent&utm_medium=56198&utm_term=conservative%20news&utm_content=1770992&utm_campaign=234718&utm_widget_id=56198"
-    },
-    "magafeed.com": {
+    }],
+    "magafeed.com": [{
         "type": "rumor",
         "2nd type": "bias",
         "3rd type": "fake",
         "Source Notes (things to know?)": "\"god/emperor\" category for trump"
-    },
-    "mediazone.news": {
+    }],
+    "mediazone.news": [{
         "type": "rumor",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "megafreshnews.com": {
+    }],
+    "megafreshnews.com": [{
         "type": "rumor",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newswire-24.com": {
+    }],
+    "newswire-24.com": [{
         "type": "rumor",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "pollhype.com": {
+    }],
+    "pollhype.com": [{
         "type": "rumor ",
         "2nd type": "clickbait",
         "3rd type": "bias",
         "Source Notes (things to know?)": ""
-    },
-    "abriluno.com": {
+    }],
+    "abriluno.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "aceflashman.wordpress.com": {
+    }],
+    "aceflashman.wordpress.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "actualidadpanamericana.com": {
+    }],
+    "actualidadpanamericana.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "adobochronicles.com": {
+    }],
+    "adobochronicles.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "associatedmediacoverage.com": {
+    }],
+    "associatedmediacoverage.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "awazetribune.com": {
+    }],
+    "awazetribune.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "beehivebugle.com": {
+    }],
+    "beehivebugle.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "betootaadvocate.com": {
+    }],
+    "betootaadvocate.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bigamericannews.com": {
+    }],
+    "bigamericannews.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "borowitzreport.com": {
+    }],
+    "borowitzreport.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bostontribune.com": {
+    }],
+    "bostontribune.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "burrardstreetjournal.com": {
+    }],
+    "burrardstreetjournal.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "callthecops.net": {
+    }],
+    "callthecops.net": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "celebtricity.com": {
+    }],
+    "celebtricity.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "chaser.com.au": {
+    }],
+    "chaser.com.au": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "christwire.org": {
+    }],
+    "christwire.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "chronicle.su": {
+    }],
+    "chronicle.su": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "clickhole.com": {
+    }],
+    "clickhole.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "creambmp.com": {
+    }],
+    "creambmp.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "crystalair.com": {
+    }],
+    "crystalair.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to http://www.cap-news.com/"
-    },
-    "dailycurrant.com": {
+    }],
+    "dailycurrant.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailydiscord.com": {
+    }],
+    "dailydiscord.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dailysnark.com": {
+    }],
+    "dailysnark.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "dailysquib.co.uk": {
+    }],
+    "dailysquib.co.uk": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dandygoat.com": {
+    }],
+    "dandygoat.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "der-postillon.com": {
+    }],
+    "der-postillon.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "German language site"
-    },
-    "derfmagazine.com": {
+    }],
+    "derfmagazine.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "disclose.tv": {
+    }],
+    "disclose.tv": [{
         "type": "satire",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "diversitychronicle.wordpress.com": {
+    }],
+    "diversitychronicle.wordpress.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "self-labled: https://diversitychronicle.wordpress.com/disclaimer/ "
-    },
-    "duffleblog.com": {
+    }],
+    "duffleblog.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "duhprogressive.com": {
+    }],
+    "duhprogressive.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "elkoshary.com": {
+    }],
+    "elkoshary.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "About Me notes that it's not fake/satirical news"
-    },
-    "elmundotoday.com": {
+    }],
+    "elmundotoday.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "About Me notes that it's not fake/satirical news"
-    },
-    "empiresports.co": {
+    }],
+    "empiresports.co": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "fmobserver.com": {
+    }],
+    "fmobserver.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fognews.ru": {
+    }],
+    "fognews.ru": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "site contains satire disclaimer"
-    },
-    "freepatriot.org": {
+    }],
+    "freepatriot.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "site contains satire disclaimer "
-    },
-    "freewoodpost.com": {
+    }],
+    "freewoodpost.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "fridaymash.com": {
+    }],
+    "fridaymash.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "glossynews.com": {
+    }],
+    "glossynews.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "gomerblog.com": {
+    }],
+    "gomerblog.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "site contains satire disclaimer "
-    },
-    "holyobserver.com": {
+    }],
+    "holyobserver.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "humortimes.com": {
+    }],
+    "humortimes.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "huzlers.com": {
+    }],
+    "huzlers.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ironictimes.com": {
+    }],
+    "ironictimes.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "islamicanews.com": {
+    }],
+    "islamicanews.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "johnnyrobish.com": {
+    }],
+    "johnnyrobish.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "landoverbaptist.org": {
+    }],
+    "landoverbaptist.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "liberalbias.com": {
+    }],
+    "liberalbias.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "liberaldarkness.com": {
+    }],
+    "liberaldarkness.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "lushforlife.com": {
+    }],
+    "lushforlife.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nahadaily.com": {
+    }],
+    "nahadaily.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "nationalreport.net": {
+    }],
+    "nationalreport.net": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ncscooper.com": {
+    }],
+    "ncscooper.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsbiscuit.com": {
+    }],
+    "newsbiscuit.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.newsbiscuit.com/about/disclaimer/ "
-    },
-    "newsbreakers.org": {
+    }],
+    "newsbreakers.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsmutiny.com": {
+    }],
+    "newsmutiny.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newsthump.com": {
+    }],
+    "newsthump.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "site contains satire disclaimer"
-    },
-    "newstoad.net": {
+    }],
+    "newstoad.net": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "Tagline: The news they don't want you to hear. Because it isn't true."
-    },
-    "newyorker.com/humor": {
+    }],
+    "newyorker.com/humor": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "objectiveministries.org": {
+    }],
+    "objectiveministries.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicops.com": {
+    }],
+    "politicops.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to Newslo"
-    },
-    "politicot.com": {
+    }],
+    "politicot.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": "redirects to Newslo"
-    },
-    "reductress.com": {
+    }],
+    "reductress.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "religionlo.com": {
+    }],
+    "religionlo.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "rockcitytimes.com": {
+    }],
+    "rockcitytimes.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "satiratribune.com": {
+    }],
+    "satiratribune.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "satirewire.com": {
+    }],
+    "satirewire.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "scrappleface.com": {
+    }],
+    "scrappleface.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sensationalisttimes.com": {
+    }],
+    "sensationalisttimes.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "speld.nl": {
+    }],
+    "speld.nl": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "sportspickle.com": {
+    }],
+    "sportspickle.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "stneotscitizen.com": {
+    }],
+    "stneotscitizen.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "stuppid.com": {
+    }],
+    "stuppid.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "surrealscoop.com": {
+    }],
+    "surrealscoop.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thebeaverton.com": {
+    }],
+    "thebeaverton.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thedailymash.co.uk": {
+    }],
+    "thedailymash.co.uk": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thedailywtf.com": {
+    }],
+    "thedailywtf.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thehardtimes.net": {
+    }],
+    "thehardtimes.net": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theineptowl.com": {
+    }],
+    "theineptowl.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thelastlineofdefense.org": {
+    }],
+    "thelastlineofdefense.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://thelastlineofdefense.org/about-us/"
-    },
-    "themadisonmisnomer.com": {
+    }],
+    "themadisonmisnomer.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "themideastbeast.com": {
+    }],
+    "themideastbeast.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.themideastbeast.com/about/"
-    },
-    "thenewsnerd.com": {
+    }],
+    "thenewsnerd.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theonion.com": {
+    }],
+    "theonion.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thepoke.co.uk": {
+    }],
+    "thepoke.co.uk": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "therightists.com": {
+    }],
+    "therightists.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "publishes both biased and fake content"
-    },
-    "theseattletribune.com": {
+    }],
+    "theseattletribune.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/"
-    },
-    "theshovel.com.au": {
+    }],
+    "theshovel.com.au": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theskunk.org": {
+    }],
+    "theskunk.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thespoof.com": {
+    }],
+    "thespoof.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thestatelyharold.com": {
+    }],
+    "thestatelyharold.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thetimesoftheworld.com": {
+    }],
+    "thetimesoftheworld.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theunrealtimes.com": {
+    }],
+    "theunrealtimes.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theuspatriot.com": {
+    }],
+    "theuspatriot.com": [{
         "type": "satire",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thevalleyreport.com": {
+    }],
+    "thevalleyreport.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "topekasnews.com": {
+    }],
+    "topekasnews.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "unconfirmedsources.com": {
+    }],
+    "unconfirmedsources.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "us.blastingnews.com": {
+    }],
+    "us.blastingnews.com": [{
         "type": "satire",
         "2nd type": "unreliable",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "waterfordwhispersnews.com": {
+    }],
+    "waterfordwhispersnews.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "WilliamBanzai7.blogspot.com": {
+    }],
+    "WilliamBanzai7.blogspot.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "winkprogress.com": {
+    }],
+    "winkprogress.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "witscience.org": {
+    }],
+    "witscience.org": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wonkie.com": {
+    }],
+    "wonkie.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "worldnewsdailyreport.com": {
+    }],
+    "worldnewsdailyreport.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wundergroundmusic.com": {
+    }],
+    "wundergroundmusic.com": [{
         "type": "satire",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "www.rt.com": {
+    }],
+    "www.rt.com": [{
         "type": "state",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "aanirfan.blogspot.co.uk": {
+    }],
+    "aanirfan.blogspot.co.uk": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": 0
-    },
-    "Acting-Man.com": {
+    }],
+    "Acting-Man.com": [{
         "type": "unreliable",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": "publishes articles denying climate change"
-    },
-    "ahtribune.com": {
+    }],
+    "ahtribune.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "allnewspipeline.com": {
+    }],
+    "allnewspipeline.com": [{
         "type": "unreliable",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "anonews.co": {
+    }],
+    "anonews.co": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "anonhq.com": {
+    }],
+    "anonhq.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "anonnews.co": {
+    }],
+    "anonnews.co": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "asia-pacificresearch.com": {
+    }],
+    "asia-pacificresearch.com": [{
         "type": "unreliable",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "AutomaticEarth.com": {
+    }],
+    "AutomaticEarth.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "links to MSM sources and unreliable sources"
-    },
-    "awm.com": {
+    }],
+    "awm.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "blackagendareport.com": {
+    }],
+    "blackagendareport.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "anon submissions"
-    },
-    "Boilingfrogspost.com": {
+    }],
+    "Boilingfrogspost.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "links to natural news, blacklist news, some conspiracy sites"
-    },
-    "breakpoint.org": {
+    }],
+    "breakpoint.org": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "bvanews.com": {
+    }],
+    "bvanews.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "fake",
         "Source Notes (things to know?)": "seems like a combination of totally fake and unreliable reports of 'real' news"
-    },
-    "cnnnext.com": {
+    }],
+    "cnnnext.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "basically an RT video channel"
-    },
-    "CNSNews.com": {
+    }],
+    "CNSNews.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "The news arm of Media Research Center (a conservative org that is frequently criticized for use of selective evidence) "
-    },
-    "coasttocoastam.com": {
+    }],
+    "coasttocoastam.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "conservativeoutfitters.com": {
+    }],
+    "conservativeoutfitters.com": [{
         "type": "unreliable",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "DaveJanda.com": {
+    }],
+    "DaveJanda.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "dcleaks.com": {
+    }],
+    "dcleaks.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "FinancialSurvivalNetwork.com": {
+    }],
+    "FinancialSurvivalNetwork.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "guccifer2.wordpress.com": {
+    }],
+    "guccifer2.wordpress.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "ifyouonlynews.com": {
+    }],
+    "ifyouonlynews.com": [{
         "type": "unreliable",
         "2nd type": "satire",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "jewsnews.co.il": {
+    }],
+    "jewsnews.co.il": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "fake",
         "Source Notes (things to know?)": ""
-    },
-    "libertynews.com": {
+    }],
+    "libertynews.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Mad-Yet.blogspot.com": {
+    }],
+    "Mad-Yet.blogspot.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "links to real news stories, but also some questionable/decontextualized images"
-    },
-    "madpatriots.com": {
+    }],
+    "madpatriots.com": [{
         "type": "unreliable",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "morningledger.com": {
+    }],
+    "morningledger.com": [{
         "type": "unreliable",
         "2nd type": "conspiracy",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "morningnewsusa.com": {
+    }],
+    "morningnewsusa.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "stories seem to originate from real news, but are somewhat clickbait-y and sources are not cited"
-    },
-    "nevo.news": {
+    }],
+    "nevo.news": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "newcenturytimes.com": {
+    }],
+    "newcenturytimes.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "Newsmax.com": {
+    }],
+    "Newsmax.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "northcrane.com": {
+    }],
+    "northcrane.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "NutritionalAnarchy.com": {
+    }],
+    "NutritionalAnarchy.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicalears.com": {
+    }],
+    "politicalears.com": [{
         "type": "unreliable",
         "2nd type": "clickbait",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "politicsintheusa.com": {
+    }],
+    "politicsintheusa.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "powerpoliticians.com": {
+    }],
+    "powerpoliticians.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "shareblue.com": {
+    }],
+    "shareblue.com": [{
         "type": "unreliable",
         "2nd type": "political",
         "3rd type": "bias",
         "Source Notes (things to know?)": "My analysis is similar to this site: https://mediabiasfactcheck.com/shareblue/"
-    },
-    "SovereignMan.com": {
+    }],
+    "SovereignMan.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theantimedia.org": {
+    }],
+    "theantimedia.org": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": "ex: http://theantimedia.org/cdc-admits-ebola-airborne/"
-    },
-    "theduran.com": {
+    }],
+    "theduran.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thefreethoughtproject.com": {
+    }],
+    "thefreethoughtproject.com": [{
         "type": "unreliable",
         "2nd type": "conspiracy",
         "3rd type": "clickbait",
         "Source Notes (things to know?)": ""
-    },
-    "thegoldandoilguy.com/articles": {
+    }],
+    "thegoldandoilguy.com/articles": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "theinformedamerican.net": {
+    }],
+    "theinformedamerican.net": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "thelibertymill.com": {
+    }],
+    "thelibertymill.com": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "conspiracy",
         "Source Notes (things to know?)": ""
-    },
-    "usdefensewatch.com": {
+    }],
+    "usdefensewatch.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "usviewer.com": {
+    }],
+    "usviewer.com": [{
         "type": "unreliable",
         "2nd type": "fake",
         "3rd type": "",
         "Source Notes (things to know?)": "basically copy/pastes parts of actual reuters stories, no authors listed or publication info"
-    },
-    "veteransnewsnow.com": {
+    }],
+    "veteransnewsnow.com": [{
         "type": "unreliable",
         "2nd type": "political",
         "3rd type": "",
         "Source Notes (things to know?)": "I read sample articles and didn't find inaccuracy, but the language is strong/loaded"
-    },
-    "WallStreetOnParade.com": {
+    }],
+    "WallStreetOnParade.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "mostly linking/commenting on both news and other sources."
-    },
-    "weaselzippers.us": {
+    }],
+    "weaselzippers.us": [{
         "type": "unreliable",
         "2nd type": "bias",
         "3rd type": "",
         "Source Notes (things to know?)": "copies/pastes quotes/bits from news orgs and other questionable sites"
-    },
-    "whowhatwhy.com": {
+    }],
+    "whowhatwhy.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    },
-    "wikileaks.com": {
+    }],
+    "wikileaks.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "https://www.nytimes.com/2017/03/09/opinion/the-truth-about-the-wikileaks-cia-cache.html?_r=0"
-    },
-    "wikileaks.org": {
+    }],
+    "wikileaks.org": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": "Increasingly wikileaks is being accused of spreading misinformation"
-    },
-    "WolfStreet.com": {
+    }],
+    "WolfStreet.com": [{
         "type": "unreliable",
         "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
-    }
-}
+    }]
+}]
 
 module.exports = sources;
