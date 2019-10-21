@@ -5,13 +5,13 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     // console.log(sources);
-    var search = "100percentfedup.com"
+    var search = "100percentfedup.com";
     Object.keys(sources).forEach(function(key) {
       // if(key)
       var keyTwo = sources[key];
-      for(i in keyTwo){
+      for (i in keyTwo) {
         // console.log(i);
-        if(i === search){
+        if (i === search) {
           console.log(i);
           Object.keys(keyTwo).forEach(function(subkey){
             console.log(subkey);
@@ -39,24 +39,7 @@ module.exports = function(app) {
   });
 
   // Render 404 page for any unmatched routes
-  app.get("*", function (req, res) {
+  app.get("*", function(req, res) {
     res.render("404");
   });
 };
-
-
-// sources 2
-// var sourcesTwo = [{
-//   "100percentfedup.com": [{
-//     "type": "bias",
-//     "2nd type": "",
-//     "3rd type": "",
-//     "Source Notes (things to know?)": ""
-//   }],
-//   "365usanews.com": [{
-//     "type": "bias",
-//     "2nd type": "conspiracy",
-//     "3rd type": "",
-//     "Source Notes (things to know?)": ""
-//   }]
-// }];
