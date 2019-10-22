@@ -92,7 +92,7 @@ var handleFormSubmit = function(event) {
 var handleCheckSource = function(event) {
   event.preventDefault();
 
-  console.log(source);
+  console.log($exampleSource);
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
