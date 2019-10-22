@@ -1,1 +1,1 @@
-INSERT INTO project2db ("","","","");
+INSERT INTO project2db ("title","description","source.com","tag1, tag2, tag3");
