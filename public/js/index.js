@@ -1,7 +1,10 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
+var $exampleSource = $("#example-source");
+var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
+var $checkBtn = $("#checkSource");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -66,11 +69,13 @@ var handleFormSubmit = function(event) {
 
   var example = {
     text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    description: $exampleDescription.val().trim(),
+    source: $exampleSource.val().trim(),
+    tag: $exampleTag.val().trim()
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!(example.text && example.description && example.source && example.tag)) {
+    alert("You must enter an example text, description, source and tags!");
     return;
   }
 
@@ -80,6 +85,14 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
+  $exampleSource.val("");
+  $exampleTag.val("");
+};
+
+var handleCheckSource = function(event) {
+  event.preventDefault();
+
+  console.log("Works");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -97,3 +110,4 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+$checkBtn.on("click", handleCheckSource);

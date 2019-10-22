@@ -4,22 +4,25 @@ var sources = require("../data/sources");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    // console.log(sources);
-    var search = "100percentfedup.com"
+    // validation feature
+    var search = "100percentfedup.com";
     Object.keys(sources).forEach(function(key) {
       // if(key)
       var keyTwo = sources[key];
-      for(i in keyTwo){
-        // console.log(i);
-        if(i === search){
-          console.log(i);
-          Object.keys(keyTwo).forEach(function(subkey){
+      for (i in keyTwo) {
+        if (i === search) {
+          // console.log(i);
+          Object.keys(keyTwo).forEach(function(subkey) {
+            // subkey = website name
             console.log(subkey);
           });
         }
       }
-      // console.log(key);
     });
+    // $(".input").on("click", function(event){
+    //   var userSiteSearch = $("#search").val().trim();
+    // search threw
+    // })
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         examples: dbExamples
@@ -39,24 +42,7 @@ module.exports = function(app) {
   });
 
   // Render 404 page for any unmatched routes
-  app.get("*", function (req, res) {
+  app.get("*", function(req, res) {
     res.render("404");
   });
 };
-
-
-// sources 2
-// var sourcesTwo = [{
-//   "100percentfedup.com": [{
-//     "type": "bias",
-//     "2nd type": "",
-//     "3rd type": "",
-//     "Source Notes (things to know?)": ""
-//   }],
-//   "365usanews.com": [{
-//     "type": "bias",
-//     "2nd type": "conspiracy",
-//     "3rd type": "",
-//     "Source Notes (things to know?)": ""
-//   }]
-// }];

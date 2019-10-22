@@ -30,6 +30,10 @@ h1 {
   font-size: 80px;
 }
 
+h4 {
+  font-size: 70px;
+}
+
 .header {
   margin-bottom: 25px;
 }
@@ -70,4 +74,8 @@ h1 {
   float: right;
   width: 49%;
   padding: 25px;
+}
+
+#other-title {
+  text-align: center;
 }
