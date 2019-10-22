@@ -69,7 +69,9 @@ var handleFormSubmit = function(event) {
 
   var example = {
     text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    description: $exampleDescription.val().trim(),
+    source: $exampleSource.val().trim(),
+    tag: $exampleTag.val().trim()
   };
 
   if (!(example.text && example.description)) {
@@ -83,6 +85,14 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
+  $exampleSource.val("");
+  $exampleTag.val("");
+};
+
+var handleCheckSource = function(event) {
+  event.preventDefault();
+
+  console.log(source);
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -100,3 +110,4 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+$checkBtn.on("click", handleCheckSource);
