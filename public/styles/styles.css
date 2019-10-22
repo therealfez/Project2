@@ -34,10 +34,20 @@ h1 {
   margin-bottom: 25px;
 }
 
+#theory-container {
+  padding: 25px 75px 50px;
+  margin: 20px auto;
+}
+
 .container {
   background: rgba(255, 255, 255, 0.5);
-  padding: 25px 75px 1000px;
+  padding: 25px 75px 700px;
   margin: 10px auto;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .theories {
