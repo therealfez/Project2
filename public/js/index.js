@@ -74,8 +74,8 @@ var handleFormSubmit = function(event) {
     tag: $exampleTag.val().trim()
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!(example.text && example.description && example.source && example.tag)) {
+    alert("You must enter an example text, description, source and tags!");
     return;
   }
 
