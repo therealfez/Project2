@@ -1,5 +1,7 @@
 .list-group-item {
   line-height: 2.5;
+  margin-bottom: 25px;
+  border-radius: 4px;
 }
 
 body {
@@ -8,6 +10,64 @@ body {
   background-repeat: no-repeat;
 }
 
+hr {
+  border-width: 5px;
+  margin: 40px auto;
+  border-color: rgb(23, 82, 23);
+}
+
+.title {
+  padding: 25px;
+  padding-top: 40px;
+  margin: 15px;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+#theory-container {
+  padding: 25px 75px 50px;
+  margin: 20px auto;
+}
+
 .container {
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 25px 75px 700px;
+  margin: 10px auto;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.theories {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  float: left;
+  width: 49%;
+  padding: 25px;
+}
+
+.hidden {
+  margin: auto 25px;
+  float: right;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  float: right;
+  width: 49%;
+  padding: 25px;
 }
