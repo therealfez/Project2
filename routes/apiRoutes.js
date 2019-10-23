@@ -1,5 +1,6 @@
 var db = require("../models");
 var passport = require("../config/passport");
+var sources = require("../data/sources")
 module.exports = function(app) {
   // API / LOGIN PIECES
   app.post("/api/signup", function(req, res){
@@ -36,6 +37,9 @@ module.exports = function(app) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.json(dbExamples);
     });
+  });
+  app.get("/api/sources", function(req, res) {
+    res.json(sources);
   });
 
   // Create a new example
