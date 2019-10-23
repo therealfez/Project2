@@ -34,7 +34,7 @@ var API = {
     });
   },
   getSources: function() {
-     return $.ajax({
+    return $.ajax({
       url: "api/sources",
       type: "GET"
     });
@@ -100,11 +100,11 @@ var handleFormSubmit = function(event) {
 function findSources(srcName) {
   var filteredSources = [];
   var keys = Object.keys(sources);
-  console.log('src name', srcName)
-  console.log('keys', keys)
+  console.log("src name", srcName);
+  console.log("keys", keys);
   for (var i = 0; i < keys.length; i++) {
     if (keys[i].startsWith(srcName)) {
-      console.log(keys[i])
+      console.log(keys[i]);
       filteredSources.push({
         name: keys[i],
         srcName: sources[keys[i]][0]
@@ -153,5 +153,3 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 // $checkBtn.on("click", handleCheckSource);
 $signup.on("click", handleSignUp);
 $login.on("click", handleLogIn);
-
-
