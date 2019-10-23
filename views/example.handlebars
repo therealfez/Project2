@@ -3,21 +3,17 @@
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Theory<i class="fas fa-eye hidden"></i><i class="fas fa-eye hidden"></i></h5>
+          <h5 class="card-title">{{example.text}}</h5>
+            <h5><i class="fas fa-eye hidden"></i><i class="fas fa-eye hidden"></i></h5>
+          <p class="description">
+            {{example.description}}</p>
           <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Title</strong>: {{example.text}}</p>
-          <p>
-          <p>
-            <strong>Description</strong>: {{example.description}}</p>
-          <p>
-          <p>
+          <p class="source">
             <strong>Source</strong>: {{example.source}}</p>
-          <p>
+          <p class="tags">
             <strong>Tags</strong>: {{example.tag}}</p>
-            <a href="/">← Back To Home</a>
+            
+          <p class="back"><a href="/">← Back To Home</a></p>
         </div>
       </div>
     </div>
