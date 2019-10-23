@@ -138,12 +138,12 @@ var handleDeleteBtnClick = function() {
 
 var handleSignUp = function(event) {
   event.preventDefault();
-  window.location.href = "http://localhost:3000/home";
+  window.location.href = "../home";
 };
 
 var handleLogIn = function(event) {
   event.preventDefault();
-  window.location.href = "http://localhost:3000/home";
+  window.location.href = "../home";
 };
 
 // Add event listeners to the submit and delete buttons
