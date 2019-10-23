@@ -1,10 +1,11 @@
+var db = require("../models");
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var exampleSource = $("#example-source");
 var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
-var $checkBtn = $("#checkSource");
+// var $checkBtn = $("#checkSource");
 var $signup = $("#signup");
 var $login = $("#login");
 var $exampleList = $("#example-list");
@@ -131,11 +132,22 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+var handleSignUp = function() {
+  app.get("/home", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("home", {
+        examples: dbExamples
+      });
+    });
+  });
+  handleSignUp();
+};
+
 // Add event listeners to the submit and delete buttons
 
-$submitBtn.on("click", handleFormSubmit);
+$submitBtn.on("click", handleCheckSource, handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
-$checkBtn.on("click", handleCheckSource);
+// $checkBtn.on("click", handleCheckSource);
 $signup.on("click", handleSignUp);
 $login.on("click", handleLogIn);
 
