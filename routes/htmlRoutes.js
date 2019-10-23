@@ -4,6 +4,9 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
+    res.render("index");
+  });
+  app.get("/home", function(req, res) {
     // validation feature
     // var search = "100percentfedup.com";
 
@@ -34,7 +37,7 @@ module.exports = function(app) {
     // search threw
     // })
     db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
+      res.render("home", {
         examples: dbExamples
       });
     });
