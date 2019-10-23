@@ -1,25 +1,32 @@
 var db = require("../models");
-
 var passport = require("../config/passport");
-
 var sources = require("../data/sources");
-
 module.exports = function(app) {
   // API / LOGIN PIECES
   app.post("/api/signup", function(req, res) {
     var email = req.body.email;
     var password = req.body.password;
-
-    db.User.create({ email: email, password: password })
-      .then(function() {
-        res.json(true);
-      })
-      .catch(function() {
-        res.status(500).json(false);
-      });
+    db.User.findOne({
+      where: {
+        email: email
+      }
+    }).then(function(user) {
+      if (user) {
+        res.status(403).json(false);
+      } else {
+        db.User.create({ email: email, password: password })
+          .then(function() {
+            res.json(true);
+          })
+          .catch(function() {
+            res.status(500).json(false);
+          });
+      }
+    });
   });
 
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
+    console.log(req.user);
     res.json(true);
   });
 
