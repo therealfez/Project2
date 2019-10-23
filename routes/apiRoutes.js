@@ -50,6 +50,7 @@ module.exports = function(app) {
     });
   });
   app.get("/api/sources", function(req, res) {
+
     res.json(sources);
   });
 
