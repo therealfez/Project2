@@ -88,6 +88,10 @@ h5 {
   padding: 25px;
 }
 
+.login {
+  width: 100%;
+}
+
 #other-title {
   text-align: center;
 }

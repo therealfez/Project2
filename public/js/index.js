@@ -5,6 +5,8 @@ var exampleSource = $("#example-source");
 var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
 var $checkBtn = $("#checkSource");
+var $signup = $("#signup");
+var $login = $("#login");
 var $exampleList = $("#example-list");
 var sources = [];
 // The API object contains methods for each kind of request we'll make
@@ -134,6 +136,8 @@ var handleDeleteBtnClick = function() {
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 $checkBtn.on("click", handleCheckSource);
+$signup.on("click", handleSignUp);
+$login.on("click", handleLogIn);
 
 API.getSources().then(function(data) {
   console.log(data);
