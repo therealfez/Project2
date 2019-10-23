@@ -9,6 +9,14 @@ var $signup = $("#signup");
 var $login = $("#login");
 var $exampleList = $("#example-list");
 var sources = [];
+
+// if(localStorage.getItem("email") {
+//   //toggle some hidden item to show
+// } else {
+//   //dont toggle block access
+// }
+
+localStorage.removeItem("email");
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -133,12 +141,44 @@ var handleDeleteBtnClick = function() {
 
 var handleSignUp = function(event) {
   event.preventDefault();
-  window.location.href = "http://localhost:3000/home";
+  var email = $("#email").val().trim();
+  var password = $("#password").val().trim();
+
+  var newUser = {
+    email: email,
+    password: password
+  };
+
+  $.post("/api/signup", newUser, function(data) {
+    if (data) {
+      $.post("/api/login", newUser, function() {
+        alert("User created and logged in successfully");
+        localStorage.setItem('email', newUser.email);
+        window.location.href = "../home";
+      });
+    } else {
+      alert();
+    }
+  });
 };
 
 var handleLogIn = function(event) {
   event.preventDefault();
-  window.location.href = "http://localhost:3000/home";
+  var email = $("#email").val().trim();
+  var password = $("#password").val().trim();
+
+var user = {
+  email: email,
+  password: password
+};
+  $.post("/api/login/", user, function(loginData) {
+    if (data) {
+      alert("login successful");
+      window.location.href = "../home";
+
+    }
+    alert("email or password do not match");
+  });
 };
 
 // Add event listeners to the submit and delete buttons
@@ -147,7 +187,9 @@ $submitBtn.on("click", handleCheckSource, handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 // $checkBtn.on("click", handleCheckSource);
 $signup.on("click", handleSignUp);
+// Add a new user to database
 $login.on("click", handleLogIn);
+//check for user in database and see if email and password match
 
 API.getSources().then(function(data) {
   console.log(data);
