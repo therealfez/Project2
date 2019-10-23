@@ -113,7 +113,7 @@ var handleCheckSource = function(event) {
   console.log("check source");
   console.log(event);
   event.preventDefault();
-  srcName = exampleSource;
+  srcName = exampleSource.val();
   console.log(findSources(srcName));
 };
 
