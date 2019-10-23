@@ -34,8 +34,8 @@ var API = {
     });
   },
   getSources: function() {
-    return $.ajax({
-      url: "/api/sources",
+     return $.ajax({
+      url: "api/sources",
       type: "GET"
     });
   }
@@ -100,8 +100,11 @@ var handleFormSubmit = function(event) {
 function findSources(srcName) {
   var filteredSources = [];
   var keys = Object.keys(sources);
+  console.log('src name', srcName)
+  console.log('keys', keys)
   for (var i = 0; i < keys.length; i++) {
     if (keys[i].startsWith(srcName)) {
+      console.log(keys[i])
       filteredSources.push({
         name: keys[i],
         srcName: sources[keys[i]][0]
@@ -113,10 +116,12 @@ function findSources(srcName) {
 
 var handleCheckSource = function(event) {
   console.log("check source");
-  console.log(event);
   event.preventDefault();
-  srcName = exampleSource.val();
-  console.log(findSources(srcName));
+  API.getSources().then(function(data) {
+    srcName = exampleSource.val();
+    sources = data;
+    console.log(findSources(srcName));
+  });
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -149,7 +154,4 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 $signup.on("click", handleSignUp);
 $login.on("click", handleLogIn);
 
-API.getSources().then(function(data) {
-  console.log(data);
-  sources = data;
-});
+
