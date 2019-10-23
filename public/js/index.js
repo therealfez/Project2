@@ -1,4 +1,3 @@
-var db = require("../models");
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
@@ -132,15 +131,14 @@ var handleDeleteBtnClick = function() {
   });
 };
 
-var handleSignUp = function() {
-  app.get("/home", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("home", {
-        examples: dbExamples
-      });
-    });
-  });
-  handleSignUp();
+var handleSignUp = function(event) {
+  event.preventDefault();
+  window.location.href = "http://localhost:3000/home";
+};
+
+var handleLogIn = function(event) {
+  event.preventDefault();
+  window.location.href = "http://localhost:3000/home";
 };
 
 // Add event listeners to the submit and delete buttons
