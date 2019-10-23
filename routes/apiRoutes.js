@@ -1,11 +1,14 @@
 var db = require("../models");
-
+var sources = require("../data/sources")
 module.exports = function(app) {
   // Get all examples
   app.get("/api/examples", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.json(dbExamples);
     });
+  });
+  app.get("/api/sources", function(req, res) {
+    res.json(sources);
   });
 
   // Create a new example
