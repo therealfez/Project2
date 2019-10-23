@@ -111,7 +111,9 @@ function findSources(srcName) {
       });
     }
   }
+  console.log(filteredSources);
   return filteredSources;
+  
 }
 
 var handleCheckSource = function(event) {
