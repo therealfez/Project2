@@ -1,12 +1,12 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $exampleSource = $("#example-source");
+var exampleSource = $("#example-source");
 var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
 var $checkBtn = $("#checkSource");
 var $exampleList = $("#example-list");
-
+var sources = [];
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -29,6 +29,12 @@ var API = {
     return $.ajax({
       url: "api/examples/" + id,
       type: "DELETE"
+    });
+  },
+  getSources: function() {
+    return $.ajax({
+      url: "/api/sources",
+      type: "GET"
     });
   }
 };
@@ -70,7 +76,7 @@ var handleFormSubmit = function(event) {
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
-    source: $exampleSource.val().trim(),
+    source: exampleSource.val().trim(),
     tag: $exampleTag.val().trim()
   };
 
@@ -85,14 +91,30 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-  $exampleSource.val("");
+  exampleSource.val("");
   $exampleTag.val("");
 };
 
-var handleCheckSource = function(event) {
-  event.preventDefault();
+function findSources(srcName) {
+  var filteredSources = [];
+  var keys = Object.keys(sources);
+  for (var i = 0; i < keys.length; i++) {
+    if (keys[i].startsWith(srcName)) {
+      filteredSources.push({
+        name: keys[i],
+        srcName: sources[keys[i]][0]
+      });
+    }
+  }
+  return filteredSources;
+}
 
-  console.log("Works");
+var handleCheckSource = function(event) {
+  console.log("check source");
+  console.log(event);
+  event.preventDefault();
+  srcName = exampleSource;
+  console.log(findSources(srcName));
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -108,6 +130,12 @@ var handleDeleteBtnClick = function() {
 };
 
 // Add event listeners to the submit and delete buttons
+
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 $checkBtn.on("click", handleCheckSource);
+
+API.getSources().then(function(data) {
+  console.log(data);
+  sources = data;
+});

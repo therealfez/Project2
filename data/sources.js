@@ -1,7 +1,8 @@
+// eslint-disableå
 // I want to set up a feature for the website that allows users
 // to search a website by its url to check its credibility
 
-var sources = [{
+var sources = {
     "100percentfedup.com": [{
         "type": "bias",
         "2nd type": "",
@@ -4952,6 +4953,23 @@ var sources = [{
         "3rd type": "",
         "Source Notes (things to know?)": ""
     }]
-}]
+}
+// console.log("test!");
+// console.log(sources);
+// console.log(Object.keys(sources));
+//  var keys = Object.keys(sources);
+// function findSources(srcName){
+//     var filteredSources = [];
+//     for(var i = 0; i < keys.length; i++){
+//         if(keys[i].startsWith(srcName)){
+//             filteredSources.push({
+//                 name: keys[i],
+//                 ...sources[ keys[i]][0]
+//             })
+//         }
+//     }
+//     return filteredSources;
+// }
+// console.log(findSources("wiki"));
 
 module.exports = sources;
