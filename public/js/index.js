@@ -35,7 +35,9 @@ var API = {
   },
   getSources: function() {
     return $.ajax({
-      url: "api/sources",
+
+      url: "/api/sources",
+
       type: "GET"
     });
   }
@@ -100,11 +102,13 @@ var handleFormSubmit = function(event) {
 function findSources(srcName) {
   var filteredSources = [];
   var keys = Object.keys(sources);
-  console.log("src name", srcName);
-  console.log("keys", keys);
+
+  //console.log("src name", srcName);
+  //console.log("keys", keys);
   for (var i = 0; i < keys.length; i++) {
     if (keys[i].startsWith(srcName)) {
-      console.log(keys[i]);
+      //console.log(keys[i]);
+
       filteredSources.push({
         name: keys[i],
         srcName: sources[keys[i]][0]
@@ -118,9 +122,11 @@ var handleCheckSource = function(event) {
   console.log("check source");
   event.preventDefault();
   API.getSources().then(function(data) {
-    srcName = exampleSource.val();
+    var srcName = exampleSource.val();
+    console.log("SRCNAME", srcName);
     sources = data;
     console.log(findSources(srcName));
+    handleFormSubmit(event);
   });
 };
 
@@ -148,7 +154,7 @@ var handleLogIn = function(event) {
 
 // Add event listeners to the submit and delete buttons
 
-$submitBtn.on("click", handleCheckSource, handleFormSubmit);
+$submitBtn.on("click", handleCheckSource);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 // $checkBtn.on("click", handleCheckSource);
 $signup.on("click", handleSignUp);

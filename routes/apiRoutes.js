@@ -43,7 +43,7 @@ module.exports = function(app) {
     });
   });
   app.get("/api/sources", function(req, res) {
-    console.log("sources hit");
+
     res.json(sources);
   });
 
