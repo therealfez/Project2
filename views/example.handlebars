@@ -8,13 +8,16 @@
           <p class="description">
             {{example.description}}</p>
           <p>
-            <p class="source">
-              <strong>Source</strong>: {{example.source}}</p>
-            <p class="tags">
-              <strong>Tags</strong>: {{example.tag}}</p>
-            <div id="reliability">Source is {{example.reliable}}
-            </div>
-            <p class="back"><a href="/home">← Back To Home</a></p>
+          <p class="source">
+            <strong>Source</strong>: {{example.source}}</p>
+            <div class="reliability">
+              {{#if filteredSources.[0]}}
+                <p>{{filteredSources.0.srcName.type}}</p>
+              {{else}}
+                <p>Source Is Reliable</p>
+              {{/if}}
+          </div>
+          <p class="back"><a href="/home">← Back To Home</a></p>
         </div>
       </div>
     </div>
