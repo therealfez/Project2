@@ -139,12 +139,13 @@ var handleCheckSource = function(event) {
 
     // this is the code that pulls out the type needed from the search
     var poop = findSources(srcName);
-    console.log(poop[0].srcName.type);
-    for (var i = 0; i < poop.length; i++) {
-      // console.log(poop[i].srcName.type);
+    // console.log(poop[0].srcName.type);
+    if ((poop = "undefined")) {
+      reliability = "reliable";
+    } else {
+      reliability = poop[0].srcName.type;
     }
     // where my new code ends
-    reliability = poop[0].srcName.type;
     handleFormSubmit(event);
   });
 };
