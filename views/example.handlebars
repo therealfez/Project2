@@ -10,6 +10,13 @@
           <p>
           <p class="source">
             <strong>Source</strong>: {{example.source}}</p>
+            <div class="reliability">
+              {{#if filteredSources}}
+                <p>{{type}}</p>
+              {{else}}
+                <p>Source Is Reliable</p>
+              {{/if}}
+          </div>
           <p class="tags">
             <strong>Tags</strong>: {{example.tag}}</p>
             
