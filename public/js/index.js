@@ -141,10 +141,11 @@ var handleCheckSource = function(event) {
     var poop = findSources(srcName);
     console.log(poop[0].srcName.type);
     for (var i = 0; i < poop.length; i++) {
+      console.log(poop[i].name);
       console.log(poop[i].srcName.type);
     }
     // where my new code ends
-    
+
     handleFormSubmit(event);
   });
 };
