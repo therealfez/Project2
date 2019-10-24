@@ -202,16 +202,17 @@ var handleLogIn = function(event) {
     .val()
     .trim();
 
-  var user = {
+  var dbUser = {
     email: email,
     password: password
   };
-  $.post("/api/login/", user, function(loginData) {
+  $.post("/api/login/", dbUser, function(loginData) {
     if (loginData) {
-      alert("login successful");
+      console.log(loginData);
       window.location.href = "../home";
+    } else if (!loginData) {
+      alert("email or password do not match");
     }
-    alert("email or password do not match");
   });
 };
 
@@ -226,6 +227,6 @@ $login.on("click", handleLogIn);
 //check for user in database and see if email and password match
 
 API.getSources().then(function(data) {
-  console.log(data);
+  // console.log(data);
   sources = data;
 });
