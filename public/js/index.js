@@ -145,13 +145,8 @@ var handleCheckSource = function(event) {
     }
     // where my new code ends
     reliability = poop[0].srcName.type;
-    return reliability;
-    // var reliabilityDiv = $("<div>");
-    // var p = $("<p>").text("Source is " + reliability);
-    // reliabilityDiv.append(p);
-    // $("#reliability").append(reliabilityDiv);
+    handleFormSubmit(event);
   });
-  handleFormSubmit(event);
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
