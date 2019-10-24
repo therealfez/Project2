@@ -145,6 +145,7 @@ var handleCheckSource = function(event) {
     handleFormSubmit(event);
   });
 };
+// new function call location
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
