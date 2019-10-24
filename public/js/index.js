@@ -141,17 +141,14 @@ var handleCheckSource = function(event) {
     var poop = findSources(srcName);
     // console.log(poop[0].srcName.type);
 
-    if ((poop = "undefined")) {
-      reliability = "reliable";
-    } else {
-      reliability = poop[0].srcName.type;
-    }
-    console.log(poop);
+    reliability = poop[0].srcName.type;
+    // console.log(poop);
 
     // where my new code ends
     handleFormSubmit(event);
   });
 };
+// new function call location
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
