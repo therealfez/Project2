@@ -35,6 +35,24 @@ var sources = {
         "3rd type": "",
         "Source Notes (things to know?)": ""
     }],
+    "time.com": [{
+        "type": "reliable",
+        "2nd type": "",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
+    "google.com":[{
+        "type": "reliable",
+        "2nd type": "",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
+    "wikipedia.com":[{
+        "type": "unreliable",
+        "2nd type": "",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
     "americanpatriotdaily.com": [{
         "type": "bias",
         "2nd type": "clickbait",
