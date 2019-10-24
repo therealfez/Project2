@@ -1,7 +1,7 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var exampleSource = $("#example-source");
+var $exampleSource = $("#example-source");
 var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
 // var $checkBtn = $("#checkSource");
@@ -9,6 +9,7 @@ var $signup = $("#signup");
 var $login = $("#login");
 var $exampleList = $("#example-list");
 var sources = [];
+var reliability;
 
 // if(localStorage.getItem("email") {
 //   //toggle some hidden item to show
@@ -43,7 +44,6 @@ var API = {
   },
   getSources: function() {
     return $.ajax({
-
       url: "/api/sources",
 
       type: "GET"
@@ -88,8 +88,9 @@ var handleFormSubmit = function(event) {
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
-    source: exampleSource.val().trim(),
-    tag: $exampleTag.val().trim()
+    source: $exampleSource.val().trim(),
+    tag: $exampleTag.val().trim(),
+    reliable: reliability
   };
 
   if (!(example.text && example.description && example.source && example.tag)) {
@@ -103,7 +104,7 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-  exampleSource.val("");
+  $exampleSource.val("");
   $exampleTag.val("");
 };
 
@@ -117,7 +118,6 @@ function findSources(srcName) {
     //console.log(keys[i]);
 
     if (keys[i].startsWith(srcName)) {
-
       filteredSources.push({
         name: keys[i],
         srcName: sources[keys[i]][0]
@@ -132,21 +132,26 @@ var handleCheckSource = function(event) {
   console.log("check source");
   event.preventDefault();
   API.getSources().then(function(data) {
-    var srcName = exampleSource.val();
+    var srcName = $exampleSource.val();
     console.log("SRCNAME", srcName);
     sources = data;
     console.log(findSources(srcName));
-  
+
     // this is the code that pulls out the type needed from the search
     var poop = findSources(srcName);
     console.log(poop[0].srcName.type);
     for (var i = 0; i < poop.length; i++) {
-      console.log(poop[i].srcName.type);
+      // console.log(poop[i].srcName.type);
     }
     // where my new code ends
-    
-    handleFormSubmit(event);
+    reliability = poop[0].srcName.type;
+    return reliability;
+    // var reliabilityDiv = $("<div>");
+    // var p = $("<p>").text("Source is " + reliability);
+    // reliabilityDiv.append(p);
+    // $("#reliability").append(reliabilityDiv);
   });
+  handleFormSubmit(event);
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -163,8 +168,12 @@ var handleDeleteBtnClick = function() {
 
 var handleSignUp = function(event) {
   event.preventDefault();
-  var email = $("#email").val().trim();
-  var password = $("#password").val().trim();
+  var email = $("#email")
+    .val()
+    .trim();
+  var password = $("#password")
+    .val()
+    .trim();
 
   var newUser = {
     email: email,
@@ -175,7 +184,7 @@ var handleSignUp = function(event) {
     if (data) {
       $.post("/api/login", newUser, function() {
         alert("User created and logged in successfully");
-        localStorage.setItem('email', newUser.email);
+        localStorage.setItem("email", newUser.email);
         window.location.href = "../home";
       });
     } else {
@@ -186,18 +195,21 @@ var handleSignUp = function(event) {
 
 var handleLogIn = function(event) {
   event.preventDefault();
-  var email = $("#email").val().trim();
-  var password = $("#password").val().trim();
+  var email = $("#email")
+    .val()
+    .trim();
+  var password = $("#password")
+    .val()
+    .trim();
 
-var user = {
-  email: email,
-  password: password
-};
+  var user = {
+    email: email,
+    password: password
+  };
   $.post("/api/login/", user, function(loginData) {
-    if (data) {
+    if (loginData) {
       alert("login successful");
       window.location.href = "../home";
-
     }
     alert("email or password do not match");
   });
