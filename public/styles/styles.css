@@ -63,6 +63,7 @@ h5 {
 .card {
   background: rgba(0, 0, 0, 0.75);
   color: white;
+  border-radius: 10px;
 }
 
 .theories {
@@ -90,6 +91,7 @@ h5 {
 
 .login {
   width: 100%;
+  border-radius: 10px;
 }
 
 #other-title {
@@ -109,5 +111,9 @@ h5 {
 
 .back {
   font-size: 15px;
+  clear: both;
+}
+
+#reliability {
   clear: both;
 }

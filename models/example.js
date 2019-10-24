@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
     text: DataTypes.STRING,
     description: DataTypes.TEXT,
     source: DataTypes.TEXT,
-    tag: DataTypes.STRING
+    tag: DataTypes.STRING,
+    reliable: DataTypes.TEXT
   });
   return Example;
 };

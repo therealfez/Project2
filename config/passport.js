@@ -33,7 +33,7 @@ passport.serializeUser(function(user, cb) {
 passport.deserializeUser(function(obj, cb) {
   db.User.findOne({
     where: {
-      id: id
+      id: obj.id
     }
   })
     .then(function(dbUser) {

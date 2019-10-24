@@ -1,7 +1,3 @@
-// eslint-disable
-// I want to set up a feature for the website that allows users
-// to search a website by its url to check its credibility
-
 var sources = {
     "100percentfedup.com": [{
         "type": "bias",
@@ -36,6 +32,24 @@ var sources = {
     "americanlookout.com": [{
         "type": "bias",
         "2nd type": "clickbait",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
+    "time.com": [{
+        "type": "reliable",
+        "2nd type": "",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
+    "google.com":[{
+        "type": "reliable",
+        "2nd type": "",
+        "3rd type": "",
+        "Source Notes (things to know?)": ""
+    }],
+    "wikipedia.com":[{
+        "type": "unreliable",
+        "2nd type": "",
         "3rd type": "",
         "Source Notes (things to know?)": ""
     }],
