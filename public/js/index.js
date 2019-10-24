@@ -43,7 +43,6 @@ var API = {
   },
   getSources: function() {
     return $.ajax({
-
       url: "/api/sources",
 
       type: "GET"
@@ -117,7 +116,6 @@ function findSources(srcName) {
     //console.log(keys[i]);
 
     if (keys[i].startsWith(srcName)) {
-
       filteredSources.push({
         name: keys[i],
         srcName: sources[keys[i]][0]
@@ -136,7 +134,7 @@ var handleCheckSource = function(event) {
     console.log("SRCNAME", srcName);
     sources = data;
     console.log(findSources(srcName));
-  
+
     // this is the code that pulls out the type needed from the search
     var poop = findSources(srcName);
     console.log(poop[0].srcName.type);
@@ -164,8 +162,12 @@ var handleDeleteBtnClick = function() {
 
 var handleSignUp = function(event) {
   event.preventDefault();
-  var email = $("#email").val().trim();
-  var password = $("#password").val().trim();
+  var email = $("#email")
+    .val()
+    .trim();
+  var password = $("#password")
+    .val()
+    .trim();
 
   var newUser = {
     email: email,
@@ -176,7 +178,7 @@ var handleSignUp = function(event) {
     if (data) {
       $.post("/api/login", newUser, function() {
         alert("User created and logged in successfully");
-        localStorage.setItem('email', newUser.email);
+        localStorage.setItem("email", newUser.email);
         window.location.href = "../home";
       });
     } else {
@@ -187,20 +189,24 @@ var handleSignUp = function(event) {
 
 var handleLogIn = function(event) {
   event.preventDefault();
-  var email = $("#email").val().trim();
-  var password = $("#password").val().trim();
+  var email = $("#email")
+    .val()
+    .trim();
+  var password = $("#password")
+    .val()
+    .trim();
 
-var user = {
-  email: email,
-  password: password
-};
-  $.post("/api/login/", user, function(loginData) {
-    if (data) {
-      alert("login successful");
+  var dbUser = {
+    email: email,
+    password: password
+  };
+  $.post("/api/login/", dbUser, function(loginData) {
+    if (loginData) {
+      console.log(loginData);
       window.location.href = "../home";
-
+    } else if (!loginData) {
+      alert("email or password do not match");
     }
-    alert("email or password do not match");
   });
 };
 
@@ -215,6 +221,6 @@ $login.on("click", handleLogIn);
 //check for user in database and see if email and password match
 
 API.getSources().then(function(data) {
-  console.log(data);
+  // console.log(data);
   sources = data;
 });
