@@ -114,8 +114,9 @@ function findSources(srcName) {
   //console.log("src name", srcName);
   //console.log("keys", keys);
   for (var i = 0; i < keys.length; i++) {
+    //console.log(keys[i]);
+
     if (keys[i].startsWith(srcName)) {
-      //console.log(keys[i]);
 
       filteredSources.push({
         name: keys[i],
@@ -123,9 +124,8 @@ function findSources(srcName) {
       });
     }
   }
-  console.log(filteredSources);
+  //console.log(filteredSources[0].srcName.type);
   return filteredSources;
-  
 }
 
 var handleCheckSource = function(event) {
@@ -136,6 +136,15 @@ var handleCheckSource = function(event) {
     console.log("SRCNAME", srcName);
     sources = data;
     console.log(findSources(srcName));
+  
+    // this is the code that pulls out the type needed from the search
+    var poop = findSources(srcName);
+    console.log(poop[0].srcName.type);
+    for (var i = 0; i < poop.length; i++) {
+      console.log(poop[i].srcName.type);
+    }
+    // where my new code ends
+    
     handleFormSubmit(event);
   });
 };
