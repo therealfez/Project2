@@ -1,7 +1,7 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var exampleSource = $("#example-source");
+var $exampleSource = $("#example-source");
 var $exampleTag = $("#example-tag");
 var $submitBtn = $("#submit");
 // var $checkBtn = $("#checkSource");
@@ -9,6 +9,7 @@ var $signup = $("#signup");
 var $login = $("#login");
 var $exampleList = $("#example-list");
 var sources = [];
+var reliability;
 
 // if(localStorage.getItem("email") {
 //   //toggle some hidden item to show
@@ -87,8 +88,9 @@ var handleFormSubmit = function(event) {
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
-    source: exampleSource.val().trim(),
-    tag: $exampleTag.val().trim()
+    source: $exampleSource.val().trim(),
+    tag: $exampleTag.val().trim(),
+    reliable: reliability
   };
 
   if (!(example.text && example.description && example.source && example.tag)) {
@@ -102,7 +104,7 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-  exampleSource.val("");
+  $exampleSource.val("");
   $exampleTag.val("");
 };
 
@@ -130,7 +132,7 @@ var handleCheckSource = function(event) {
   console.log("check source");
   event.preventDefault();
   API.getSources().then(function(data) {
-    var srcName = exampleSource.val();
+    var srcName = $exampleSource.val();
     console.log("SRCNAME", srcName);
     sources = data;
     console.log(findSources(srcName));
@@ -139,13 +141,17 @@ var handleCheckSource = function(event) {
     var poop = findSources(srcName);
     console.log(poop[0].srcName.type);
     for (var i = 0; i < poop.length; i++) {
-      console.log(poop[i].name);
-      console.log(poop[i].srcName.type);
+      // console.log(poop[i].srcName.type);
     }
     // where my new code ends
-
-    handleFormSubmit(event);
+    reliability = poop[0].srcName.type;
+    return reliability;
+    // var reliabilityDiv = $("<div>");
+    // var p = $("<p>").text("Source is " + reliability);
+    // reliabilityDiv.append(p);
+    // $("#reliability").append(reliabilityDiv);
   });
+  handleFormSubmit(event);
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
